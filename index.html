@@ -1,121 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 	<head>
-		<title>Home :: Michael Kafarowski</title>
-		<meta charset="utf-8" /> 
-		<link rel="stylesheet" href="style.css" type="text/css" />
-
-		<meta name=viewport content="width=device-width, initial-scale=1">
-	</head>	
-	
-	<body class="body">
-		<header class="mainheader">
+		<title>Home : Michael Kafarowski</title>
+		<link rel="stylesheet" type="text/css" href="./scripts/style.css">
+	</head>
+	<body>
+		<div id="mainWindow">
+			<div id="mainContent">
+				<div id="navBar">
+					<div id="navBarInner">
+						<div id="navBarBanner">
+							<!--- <img src="./images/navBanner.jpg" alt="Banner"/> -->
+							<h1>Michael Kafarowski</h1>
+							<h3>Mechatronics Engineering Student and Techno Font Enthusiast</h3>
+						</div>
+						<div id="navBarLinks">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/projects/">Projects</a></li>
+								<li><a href="/blog/">Blog</a></li>
+								<!-- 
+								<li><a href="/photography/">Photography</a></li>
+								<li><a href="/pm3000/index.html">Play PM3000</a></li> 
+								-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="contentSection">
+					<div class="contentSectionInner">
+						<h1>Welcome to my site!</h1>
 			
-			<nav class="nav">
-				<ul>
-					<li><h1 class="navname">Michael Kafarowski <h1 class="blink"></h1> </li>
-					<li><h1 class="blink">_</h1></li>
-					<li class="active"><a  href="/">Home</a></li>
-					<li><a href="#projects">Project List</a></li>
-					<li><a href="#resume">Resume</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<div class="maincontent">
-			<div class="content">
+						<div class="article">
+							<div class="floatLeft profilePhoto">
+								<img src="./images/face.jpg" alt="Photo1"/>
+							</div>
+								<p>Welcome to my website!</p>
+								<p>I'm a third year Mechatronics student at the University of Waterloo. I have particular interests in radio and space-related technologies, but enjoy design work in many other fields, as well as software development. When practical and appropriate, I like taking the opportunity to work on technical projects at a low level - for instance programming with minimal external libraries or using assembly in software projects, or using discrete logic ICs instead of a microcontroller for electronic projects. For example, this website's CSS theme and HTML was coded entirely from scratch using BBEdit. My favorite logic gate is XOR.</p>
+								<p>>Outside my technical passions, I enjoy dabbling in many other activities, such as archery, inline skating and photography. I find them very to be very Zen - hobbies I can use to clear my mind. You will soon find some of my photography on this site. I'm also currently studying Japanese, and my goal is to take the JLPT-N5 test by early 2017.  I view it as a personal challenge - to learn a language structured so much different than English, with a complex logographic writing system.</p>
+								<p>On this site you can find some of the school and personal projects I've worked on in the past, as well as my new blog. You can find links to my Github page, YouTube channel, Twitter account and other sites at the bottom of this homepage!</p>
+							</div>
+					</div>
+				</div>
 				
-				<article class="boxes intro center">
-					<content class="contentWords">
-						<h1 id="mainName">Michael Kafarowski</h1>
-						<p>I am a Waterloo Mechatronics Engineering Student with a love for anything related to computing, design and technology.</p>
-					</content>
-				</article>
+				<div class="contentSection">
+				<div class="contentSectionInner">
+					<h1>Featured Content</h1>
+					<div class="article">
+					<div class="floatRight contentPhoto" >
+						<img src="./projects/projectimages/alianesanimate.gif" alt="Photo1"/>
+					</div>
+					<h2>ALIAneS Nintendo Entertainment System Emulator</h2>
+					<p>This is a work in progress (but functional!) emulator for the Nintendo Entertainment System (NES). 
+					Using it you can play games such as Super Mario Brothers and Donkey Kong from cartridge ROM memory dump files on your computer.
+					It emulates all official opcodes of the 6502 Microprocessor. It emulates the 2C07 Picture Processing Unit on a scanline-by-scanline level, though this code is still in development.</p>
+					<a href="./projects/alianes.html">Read More...</a>
+					</div>
+				</div>
+				</div>
 				
+				<div class="contentSection">
+				<div class="contentSectionInner">
+					<h1>Recent Video</h1>
+					<div class="article">
+					<h2>Reading EEPROM Data Without a Microcontroller</h2>
+					<p>I had salvaged a small SPI based EEPROM chip from something a while back and wanted to see if it still worked and had data stored on it. I whipped up a simple circuit to communicate with it manually and recorded the results.</p>
+					<div style="text-align:center;">	
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/bIUdJX0o8iU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				</div>
 				
-				
-				<article class="boxes projects center animate">
-					<content class="contentWords">
-					<a name="projects">
-						<p>
-							<a href="/highschool.html"><img class="enlargeAnim" src="/img/HS.png"></img></a>
-							<a href="/firstyear.html"><img class="enlargeAnim" src="/img/FS.png"></img></a>
+			<div class="contentSection">
+				<div class="contentSectionInner">
+					<h1>Connect With Me!</h1>
+					<div class="article">
+						<div class="iconContainer">
+							<a target='_blank' href="https://github.com/Aliasmk/">
+								<img src="./images/externlogos/github.png" alt="Github logo"/><p>Github</p>
+							</a>
+							</div>
 							
-							<a href="/#art"><img class="enlargeAnim" src="/img/3D.png"></img></a>
-							<a href="/#art"><img class="enlargeAnim" src="/img/Photo.png"></img></a>
+							<div class="iconContainer">
+							<a target='_blank' href="https://twitter.com/mkafarowski/">
+								<img src="./images/externlogos/twitter.png" alt="Twitter logo"/><p>Twitter</p>
+							</a>
+							</div>
 							
-							<a href="/#programming"><img class="enlargeAnim" src="/img/Prog.png"></img></a>
-							<!--<img src="/img/VEX.png"></img>-->
+							<div class="iconContainer">
+							<a target='_blank' href="http://steamcommunity.com/id/xr72">
+									<img src="./images/externlogos/steam.png" alt="Steam logo"/><p>Steam</p>
+							</a>
+							</div>
 							
-							<a href="/#altoids"><img class="enlargeAnim" src="/img/Altoids.png"></img></a>
-						</p>
-					</content>
-				</article>
-				
-				<!--HighSchool-->
-	
-				
-				<!--3D-->
-				<article class="boxes center">
-				<a name="art">
-				<h1>3D Art and Photography Portfolio</h1>
-				<a href="http://mkafarow.daportfolio.com/" target="_blank"><img style="width:200px; height:auto;" src="dalogo.jpg"><Br>Click here to visit my portfolio containing some of my 3D modelling and photography work.</a>
-				
-				
-				</article>
-			
-				<!--Programming-->
-				<article class="boxes center">
-				<a name="programming">
-				<h1>Programming Projects (GitHub)</h1>
-				<a href="https://github.com/Aliasmk" target="_blank"><img  style="width:300px; height:auto;" src="github-mark.png"</img><br>Click here to visit my GitHub profile, home of the Infinite Monkey Theorem Model, Resister Color Codes Applet, and other programming-based side projects I do for fun.</a>
-				</article>
-				
-				<!--Altoids-->
-				<article class="boxes center">
-				<a name="altoids">
-				<h1>Altoids Mini Motion Tracker</h1>
-				<a href="http://www.instructables.com/id/Altoids-Mini-Motion-Tracker/" target="_blank"> <img src="instruct.png"><br>Click here to view my Altoids Mini-Motion Tracker featured how-to guide on Instructables.com.</a>
-				</article>
+							<div class="iconContainer">
+							<a target='_blank' href="http://www.instructables.com/member/Aliasmk/">
+									<img src="./images/externlogos/instructables.png" alt="Instructables logo"/><p>Instructables</p>
+							</a>
+							</div>
+							
+							<div class="iconContainer">
+							<a target='_blank' href="https://www.youtube.com/channel/UCWIo_Otazasek6grsG4S6nw">
+									<img src="./images/externlogos/youtube.png" alt="Youtube logo"/><p>Youtube</p>
+							</a>
+							</div>
+					</div>
+				</div>
+			</div>
 				
 				
-				<article class="boxes center">
-				<a name="resume">
-					<content class="contentWords">
-						<h1>Resume</h1>
-						<p>
-							Thank you for your interest! To request a copy of my resume, please <a href="mailto:michael@kafarowski.com?subject=Resume-Request">Email Me</a>!
-						</p>
-					</content>
-				</article>
-				
-				
+				<div id="footer">
+					<p>&copy Michael Kafarowski 2016 <br><img style="width:15px;" src="./images/pick.png"/> Built from the ground up with no external libraries, just pure CSS and HTML!</p>
+				</div>
 			</div>
 		</div>
-		<!--
-		<aside class="topsidebar">
-			<article>
-			</article>
-		</aside>
-		-->
-		<footer class="mainfooter">
-			<p>Copyright &copy 2015 Michael Kafarowski</p> 
-		</footer>
-		
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68321101-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
-		
-		
 	</body>
-
-
 </html>

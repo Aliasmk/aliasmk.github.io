@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>EEPROM Reader : Michael Kafarowski</title>
+		<link rel="stylesheet" type="text/css" href="/scripts/style.css">
+	</head>
+	
+	<body>
+		<div id="mainWindow">
+			<div id="mainContent">
+				
+				<!--- NAVIGATION BAR --->
+				
+				<div id="navBar">
+					<div id="navBarInner">
+						<div id="navBarBanner">
+							<!--- <img src="./images/navBanner.jpg" alt="Banner"/> -->
+							<h1>Michael Kafarowski</h1>
+							<h3>Mechatronics Engineering Student and Techno Font Enthusiast</h3>
+						</div>
+						<div id="navBarLinks">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/projects/">Projects</a></li>
+								<li><a href="/blog/">Blog</a></li>
+								<!-- 
+								<li><a href="/photography/">Photography</a></li>
+								<li><a href="/pm3000/index.html">Play PM3000</a></li> 
+								-->
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!--- MAIN PAGE CONTENT, ONLY NEED TO MODIFY UNTIL BEGINNING OF FOOTER --->
+				
+				<div class="contentSection">
+					<div class="contentSectionInner">
+						<h1>No-Microcontroller EEPROM Reader</h1>
+						<div class="article">
+							<a href="/projects/">Return to Projects</a>
+							<p>A few years ago I desoldered an EEPROM from something I was salvaging parts from. I decided it would be interesting if I could use pushbuttons and LEDs in place of datalines from a microcontroller to control the EEPROM.
+								<br><br>I had a button for the Clock Pulse, a button for Data In, a switch for Chip Select and an LED for data out. At first I failed because the pushbuttons created "bounce" which was especially a problem for the clock, where each press would actually trigger dozens of clock cycles. I decided instead to replace the clock button with a 555 timer. I believe a low pass filter would have worked as well, but I didn't try it.
+								<br><br>This project was done mostly to demonstrate how chips are interfaced with by microcontrollers, on a very slow time scale. This is obviously not a practical way to read or program an EEPROM!
+								<br><br>Essentially the chip checks for a signal on the data in line every time the clock pulses. If it sees a particular sequence of 0s and 1s, it executes different instructions (such as read, write, erase etc), with different parameters (data to write, address to write to).
+							</p>
+							<div style="text-align:center;">	
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/bIUdJX0o8iU" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<br>
+							<img style="width:60%; display: block; margin-left: auto; margin-right: auto;" src="./projectImages/eepromSchematic.jpg"/>
+							<p>Note the 5M resistor is just a few 1Ms in series.... I'm still working on more elegant 555 circuits as you can probably imagine :)</p>
+							<a href="/projects/">Return to Projects</a>
+						</div>
+					</div>
+				</div>
+	
+				<!--- MAIN PAGE CONTENT ENDS --->
+	
+	
+	
+				<div id="footer">
+					<p>&copy Michael Kafarowski 2016 <br><img style="width:15px;" src="./images/pick.png"/> Built from the ground up with no external libraries, just pure CSS and HTML!</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>IMT Model : Michael Kafarowski</title>
+		<link rel="stylesheet" type="text/css" href="/scripts/style.css">
+	</head>
+	
+	<body>
+		<div id="mainWindow">
+			<div id="mainContent">
+				
+				<!--- NAVIGATION BAR --->
+				
+				<div id="navBar">
+					<div id="navBarInner">
+						<div id="navBarBanner">
+							<!--- <img src="./images/navBanner.jpg" alt="Banner"/> -->
+							<h1>Michael Kafarowski</h1>
+							<h3>Mechatronics Engineering Student and Techno Font Enthusiast</h3>
+						</div>
+						<div id="navBarLinks">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/projects/">Projects</a></li>
+								<li><a href="/blog/">Blog</a></li>
+								<!-- 
+								<li><a href="/photography/">Photography</a></li>
+								<li><a href="/pm3000/index.html">Play PM3000</a></li> 
+								-->
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!--- MAIN PAGE CONTENT, ONLY NEED TO MODIFY UNTIL BEGINNING OF FOOTER --->
+				
+				<div class="contentSection">
+					<div class="contentSectionInner">
+						<h1>Java Infinite Monkey Theorem Model</h1>
+						<div class="article">
+							<a href="/projects/">Return to Projects</a>
+							
+							<p>This application simulates the Infinite Monkey theory (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding english words.
+							<br><br>Originally starting out as a fun side project, I continued to develop this program, making it faster and faster. Currently the limiting factor is not its speed but in fact its memory usage. The speed can be made faster with threading, I would think but the memory usage is a bit more interesting of a problem.
+							</p>
+							<h2>Example of Operation</h2>
+							<p>Various settings can be specified to create different patterns of gibberish (to simulate different monkeys, typewriters, etc). An example would be text that looks like this:
+							<br><br>
+							<img style="width:60%; display: block; margin-left: auto; margin-right: auto;" src="./projectImages/imtGibb.png"/>
+							<br>Below is an example output of the program scanning 3.9 million possible words randomly generated, and finding 21.5 thousand real english words in just over 13 seconds.
+							<br><br>
+							<img style="width:80%; display: block; margin-left: auto; margin-right: auto;" src="./projectImages/imtOutput.png"/>
+							<br>
+							For this particular run, the results are shown below:
+							</p>
+							<div style="font-style:italic;text-align:center;">
+							Scanned a total of 3872398 possible words, 21524 of these were real. (0.56%) 
+							<br>Percentage of word lengths as follows: 
+	 						<br>2 letters: 17510 (81.35%) 
+	 						<br>3 letters: 3716 (17.26%) 
+							<br>4 letters: 281 (1.31%) 
+							<br>5 letters: 16 (0.07%) 
+	 						<br>6 letters: 1 (0%) 
+							<br>7 letters: 0 (0%) 
+
+							</div>
+							<p>
+							<br><br>Please note: this program does not simulate any physical interaction that normal monkeys may have with a typewriter.
+							<br><br><img style="width:30%; display: block; margin-left: auto; margin-right: auto;" src="./projectImages/monkeytyping.jpg"/>
+							</p>
+						<a href="/projects/">Return to Projects</a>	
+						</div>
+					</div>
+				</div>
+	
+				<!--- MAIN PAGE CONTENT ENDS --->
+	
+	
+	
+				<div id="footer">
+					<p>&copy Michael Kafarowski 2016 <br><img style="width:15px;" src="./images/pick.png"/> Built from the ground up with no external libraries, just pure CSS and HTML!</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

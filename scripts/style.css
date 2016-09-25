@@ -1,0 +1,225 @@
+@font-face{
+    font-family: 'xol';
+    src: url('Xolonium-Regular.otf');
+    
+}
+body {
+	background-image:url("../images/bgtile.png");
+}
+#mainWindow {
+	width:1000px;
+	margin: 0 auto 1.5rem;
+}
+
+/* ---------- NAV BAR ---------- */
+#navBar {
+	background-color:#aaa;
+	border-radius:10px;
+}
+
+#navBarInner {
+	padding:5px;
+}
+
+#navBarBanner {
+	height: 200px;
+	overflow:hidden;
+	background-image:url("../images/navBanner.jpg");
+	background-position: -110px -80px;
+	font-family: 'xol', Arial;
+	color:white;
+	text-shadow: 3px 3px #000;	
+}
+
+#navBarBanner h1{
+	margin: 10px auto 0px 15px;
+    font-size:3rem;	 
+    font-style:italic;
+}
+
+#navBarBanner h3{
+	margin: 0px auto auto 15px;
+    font-size:1.2rem;
+    font-style:italic;
+}
+
+/* Used only if background image not set instead */
+/* 
+#navBarBanner img {
+	max-width:100%;
+	position: relative; 
+    top: -80px;
+}
+*/
+
+#navBarLinks ul {
+	margin:0px;
+	padding:0px;
+	list-style-type: none;
+	background-color:#333;
+    overflow: hidden;
+}
+
+#navBarLinks li {
+	float: left;
+	border-right: 1px solid #444;
+}
+
+#navBarLinks li a {
+	display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'xol', Arial;
+    font-size:1.4rem;	
+}
+
+#navBarLinks li a:hover {
+	background-color:#555;
+}
+
+.active {
+	background-color:#444;
+}
+
+/* ---------- CONTENT OF PAGE ---------- */
+.contentSection{
+	margin-top:10px;
+}
+
+.contentSectionInner {
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	padding:5px;
+	
+}
+.contentSectionInner h1{
+	padding:15px;
+	background-color:#333;
+	color:white;
+	font-family: 'xol', Arial;
+    font-size:1.4rem;	
+    margin:0;
+}
+
+.contentSectionInner h2 {
+	font-family: 'xol', Arial;
+	font-size:1.3em;
+	margin-top:0;
+}
+
+.article, .project {
+	padding: 15px;
+	overflow: hidden;
+}
+
+.article p, .project p {
+	font-family: Arial;
+}
+
+.article a, .project a {
+	font-family: 'xol', Arial;
+	font-style:italic;
+}
+
+.project {
+	border-bottom: thin solid #999;
+}
+
+.project a{
+	padding:4px;
+	color:#337;
+	border-radius:5px;
+	
+}
+
+.project a:hover{
+	color:#fff;
+}
+
+/* ---------- IMAGE RELATED ---------- */
+
+.profilePhoto img{
+	max-width:150px;
+	max-height:auto;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.contentPhoto img{
+	max-width:200px;
+	max-height:auto;
+	margin-right: 20px;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.floatRight{
+	float:right;
+}
+
+.imgwcaption{
+	width:45%;
+	text-align:center;
+	margin: 0 auto; 
+}
+
+.imgwcaption img {
+	width:80%;
+}
+
+.imgwcaption p {
+
+	font-style:italic;
+	font-size:0.8em;
+	margin-top:5px;
+}
+
+
+/* ---------- CONNECT WITH ME STUFF ---------- */
+
+/* Div Only Option For Layout */
+
+
+.iconContainer {
+	display:inline-block;
+	width:19.375%;
+}
+
+.iconContainer p {
+	text-align:center;
+	font-family: 'xol', Arial;
+	color:black;
+}
+
+.iconContainer img {
+	max-width:70px;
+	display:block;
+	margin: auto;
+}
+
+
+/* Table Option For Layout (Not used) */
+#frontPageIcons {
+	margin:0 auto;
+}
+
+#frontPageIcons img {
+	max-width:90px;
+}
+
+#frontPageIcons td {
+	padding-right:50px;
+	margin-bottom:0px;
+	text-align:center;
+	font-family: 'xol', Arial;
+}
+
+
+
+
+
+
