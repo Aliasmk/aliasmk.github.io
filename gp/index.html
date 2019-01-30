@@ -1,0 +1,230 @@
+<html>
+<head>
+	<title>GranolaPods UI</title>
+	<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0' 
+	/>
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+			font-family: 'ink';
+			src: url('Inkfree.ttf');
+		}
+		
+		body {
+			color: white;
+			font-size:70%;
+			font-family: 'Open Sans', sans-serif;
+			background-image: url("./bgtile.png");
+			
+		}
+		
+		h1 {
+			font-family:'ink'; 
+			font-style:italic;
+		}
+		
+		h3 {
+			font-size:25px;
+			margin:0;
+		}
+		
+		#background_container {
+			width:600px;
+			margin: 0 auto;
+		}
+		
+		#main_window {
+			background-color: rgba(0,0,0,0.5);
+			border-radius:20px;
+			padding:1px;
+			text-align:center;
+		}
+		
+		#window_header {
+			background-color: rgba(255,255,255,0.1);
+			width: 90%;
+			margin: 0 auto;
+			border-radius:10px;
+			font-size:120%;
+			
+		}
+		
+		#window_controls {
+			width: 90%;
+			margin:10 auto;
+			padding:10px;
+			
+		}
+		
+		.control {
+			width: 150px;
+			margin-left:13px;
+			margin-right:13px;
+			border-radius:10px;
+			background-color: rgba(255,255,255,0.1);
+			display:inline-block;
+		}
+		
+		.button {
+			background-color:#222222;
+			margin:10px;
+			padding:2px;
+			border-color:black;
+			border-width:2px;
+			border-style:solid;
+			border-radius:20px;
+			
+			-moz-user-select: -moz-none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		
+		#window_footer {
+			background-color: #222222;
+			border-color:black;
+			border-width:2px;
+			border-style:solid;
+			border-radius:20px;
+			width: 70%;
+			margin: 15 auto;
+			padding:1px;
+			border-radius:10px;
+			
+			-moz-user-select: -moz-none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	</style>
+	<script>
+	var proteinVal = 0;
+	var fatVal = 0;
+	var carbVal = 0;
+	
+
+	
+	function pUp(){
+		proteinVal+=10;
+		document.getElementById("pval").innerHTML = proteinVal + '%';
+		checkPercent();
+	}
+	
+	function pDown(){
+		proteinVal-=10;
+		document.getElementById("pval").innerHTML = proteinVal + '%';
+		checkPercent();
+	}
+	
+	function fUp(){
+		fatVal+=10;
+		document.getElementById("fval").innerHTML = fatVal + '%';
+		checkPercent();
+	}
+	
+	function fDown(){
+		fatVal-=10;
+		document.getElementById("fval").innerHTML = fatVal + '%';
+		checkPercent();
+	}
+	
+	function cUp(){
+		carbVal+=10;
+		document.getElementById("cval").innerHTML = carbVal + '%';
+		checkPercent();
+	}
+	
+	function cDown(){
+		carbVal-=10;
+		document.getElementById("cval").innerHTML = carbVal + '%';
+		checkPercent();
+	}
+	
+	function checkPercent(){
+		delta = 100 - proteinVal - fatVal - carbVal;
+		if (delta == 100){
+			document.getElementById("goButton").innerHTML = "Tap the buttons to add ingredients!";
+		}else if(delta > 0){
+			document.getElementById("goButton").innerHTML = delta + "% to go!";
+		}else if (delta < 0){
+			document.getElementById("goButton").innerHTML = -delta + "% too much!";
+		}else{
+			document.getElementById("goButton").innerHTML = "Make my GranolaPod!";
+		}
+	}
+	
+	function makePod(){
+		delta = 100 - proteinVal - fatVal - carbVal;
+		if(delta == 0){
+			alert("Attempting to make a GranolaPod with " +proteinVal +"% protein, " +fatVal + "% fat and " +carbVal + "% carbs.")
+		}
+	}
+	
+	</script>
+	
+	
+	
+</head>
+
+<body onload="checkPercent()">
+	<div id="background_container">
+		<div id="main_window">
+			<div id="window_header">	
+				<h1>Welcome to GranolaPods!</h1>
+				<p>To begin, tap the buttons below to choose your selection</p>
+			</div>
+			<div id="window_controls">
+				<div class="protein control">
+					<h1>Protein</h1>
+					<div class="button" onclick="pUp()">
+						<h3>+</h3>
+					</div>
+					<div class="middle_info">
+						<h2 id="pval">0%</h2>
+					</div>
+					<div class="button" onclick="pDown()">
+						<h3>-</h3>
+					</div>
+				</div>
+				
+				<div class="fat control">
+					<h1>Fat</h1>
+					<div class="button" onclick="fUp()">
+						<h3>+</h3>
+					</div>
+					<div class="middle_info">
+						<h2 id="fval">0%</h2>
+					</div>
+					<div class="button" onclick="fDown()">
+						<h3>-</h3>
+					</div>
+				</div>
+				
+				<div class="carbs control">
+					<h1>Carbs</h1>
+					<div class="button" onclick="cUp()">
+						<h3>+</h3>
+					</div>
+					<div class="middle_info">
+						<h2 id="cval">0%</h2>
+					</div>
+					<div class="button" onclick="cDown()">
+						<h3>-</h3>
+					</div>
+				</div>
+			</div>
+			<div id="window_footer" onclick="makePod()">
+				<h1 id="goButton" >Make my GranolaPod!</h1>
+			
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
