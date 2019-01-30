@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'ink';
+	src: url('Inkfree.ttf');
+}
+
+body {
+	color: black;
+	font-size:60%;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("./bg2.jpg");
+	
+}
+
+h1 {
+	font-family:'ink'; 
+	font-style:italic;
+}
+
+h3 {
+	font-size:25px;
+	margin:0;
+}
+
+#background_container {
+	width:600px;
+	margin: 0 auto;
+}
+
+#main_window {
+	background-color: rgba(255,255,255,0.7);
+	border-radius:20px;
+	border-color:#20aa71;
+	border-style:solid;
+	padding:1px;
+	text-align:center;
+}
+
+#window_header {
+	background-color: rgba(255, 255, 255,0.8);
+	margin: 0 auto;
+	border-radius:15px 15px 0 0; 
+	border-bottom:solid #20aa71 2px;
+	font-size:120%;
+	padding-top:1px;
+	padding-bottom:1px;
+	
+}
+
+#window_controls {
+	width: 90%;
+	margin:10 auto;
+	padding:10px;
+	
+	
+}
+
+.control {
+	width: 150px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:10px;
+	border: solid black 2px;
+	background-color: rgba(255,255,255,0.8);
+	display:inline-block;
+	
+}
+
+.button {
+	background-color:#20aa71;
+	margin:10px;
+	padding:2px;
+	border-color:black;
+	border-width:2px;
+	border-style:solid;
+	border-radius:20px;
+	
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#window_footer {
+	background-color: rgba(255, 255, 255,0.8);
+	margin: 0 auto;
+	border-radius:0 0 10px 10px;
+	border-top:solid #20aa71 2px;
+	padding:1px;
+}
+
+#go_button {
+	background-color: #20aa71;
+	border-color:black;
+	border-width:2px;
+	border-style:solid;
+	border-radius:20px;
+	width: 70%;
+	margin: 15 auto;
+	padding:1px;
+	border-radius:10px;
+	
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
