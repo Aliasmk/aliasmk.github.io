@@ -13,7 +13,7 @@
 	<link href="css_general.css" rel="stylesheet" type="text/css">
 	<link href="spinner.css" rel="stylesheet" type="text/css">
 
-	<link id="styles" href="" rel="stylesheet" type="text/css">
+	<link id="styles" href="css_light.css" rel="stylesheet" type="text/css">
 	
 	<script>
 		var proteinVal = 0;
@@ -124,8 +124,8 @@
 
 				document.getElementById('background_container').className += "flipped";
 				
-				
-				goform.submit();
+				setTimeout(function () { location.reload(true); }, 5000);
+				//goform.submit();
 			}
 		}
 	</script>	
