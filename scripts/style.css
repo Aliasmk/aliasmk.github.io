@@ -25,34 +25,29 @@ body {
 
 #navBarBanner {
 	height: 200px;
-	overflow:hidden;
 	background-image:url("../images/navBanner.jpg");
 	background-position: -110px -80px;
-	font-family: 'xol', Arial;
+
 	color:white;
+	font-family: 'xol', Arial;
+	font-style:italic;
+	font-weight:bold;
 	text-shadow: 3px 3px #000;	
+	
+	overflow:hidden;
 }
 
-#navBarBanner h1{
+.title {
+	display: block;
+
 	margin: 10px auto 0px 15px;
-    font-size:3rem;	 
-    font-style:italic;
+    font-size:3em;	 
 }
 
-#navBarBanner h3{
-	margin: 0px auto auto 15px;
+.titleSubscript{
+	margin: 15px;
     font-size:1.2rem;
-    font-style:italic;
 }
-
-/* Used only if background image not set instead */
-/* 
-#navBarBanner img {
-	max-width:100%;
-	position: relative; 
-    top: -80px;
-}
-*/
 
 #navBarLinks ul {
 	margin:0px;
@@ -193,6 +188,10 @@ body {
 	font-style:italic;
 	font-size:0.8em;
 	margin-top:5px;
+}
+
+.hidden p {
+	display: none;
 }
 
 
