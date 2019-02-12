@@ -1,8 +1,10 @@
 @font-face{
     font-family: 'xol';
     src: url('Xolonium-Regular.otf');
-    
 }
+
+
+
 body {
 	background-image:url("../images/bgtile.png");
 }
@@ -97,26 +99,29 @@ body {
     font-size:1.4rem;	
     margin:0;
     border-bottom:solid black 2px;
+    font-weight:normal;
     
 }
 
 .contentSectionInner h2 {
 	font-family: 'xol', Arial;
-	font-size:1.3em;
+	font-size:1.2em;
 	margin-top:0;
 }
 
 .article, .project {
-	padding: 15px;
+	padding: 15px 55px;
 	overflow: hidden;
 }
 
 .article p, .project p {
-	font-family: Arial;
+	font-family: 'Arial';
+	line-height: 150%;
+
 }
 
 .article a, .project a {
-	font-family: Arial;
+	font-family:  'Arial';
 }
 
 .project {
@@ -137,17 +142,17 @@ body {
 /* ---------- IMAGE RELATED ---------- */
 
 .profilePhotoSmall img{
-	max-width:130px;
+	max-width:140px;
 	margin-right: 20px;
-	margin-left:10px;
+	margin-left:20px;
 	border-radius: 50%;
 	border: solid white 4px;
 }
 
 .profilePhotoLarge img{
-	max-width:200px;
+	max-width:250px;
 	margin-right: 20px;
-	margin-left:10px;
+	margin-left:20px;
 	border-radius: 50%;
 	border: solid white 4px;
 }
@@ -155,6 +160,7 @@ body {
 .contentPhoto img{
 	max-width:200px;
 	margin-right: 20px;
+	margin-left:20px;
 }
 
 .floatLeft{
