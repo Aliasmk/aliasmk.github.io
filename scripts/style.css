@@ -19,10 +19,6 @@ body {
 	border:solid black 2px;
 }
 
-#navBarInner {
-
-}
-
 #navBarBanner {
 	height: 200px;
 	background-image:url("../images/navBanner.jpg");
@@ -39,12 +35,11 @@ body {
 
 .title {
 	display: block;
-
 	margin: 10px auto 0px 15px;
     font-size:3em;	 
 }
 
-.titleSubscript{
+.titleSubscript {
 	margin: 15px;
     font-size:1.2rem;
 }
@@ -143,7 +138,6 @@ body {
 
 .profilePhotoSmall img{
 	max-width:130px;
-	max-height:auto;
 	margin-right: 20px;
 	margin-left:10px;
 	border-radius: 50%;
@@ -152,7 +146,6 @@ body {
 
 .profilePhotoLarge img{
 	max-width:200px;
-	max-height:auto;
 	margin-right: 20px;
 	margin-left:10px;
 	border-radius: 50%;
@@ -161,7 +154,6 @@ body {
 
 .contentPhoto img{
 	max-width:200px;
-	max-height:auto;
 	margin-right: 20px;
 }
 
@@ -189,11 +181,6 @@ body {
 	font-size:0.8em;
 	margin-top:5px;
 }
-
-.hidden p {
-	display: none;
-}
-
 
 /* ---------- CONNECT WITH ME STUFF ---------- */
 
