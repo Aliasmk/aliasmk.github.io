@@ -15,10 +15,12 @@ body {
 #navBar {
 	background-color:#aaa;
 	border-radius:10px;
+	overflow:hidden;
+	border:solid black 2px;
 }
 
 #navBarInner {
-	padding:5px;
+
 }
 
 #navBarBanner {
@@ -58,6 +60,7 @@ body {
 	list-style-type: none;
 	background-color:#333;
     overflow: hidden;
+    border-top: solid black 2px;
 }
 
 #navBarLinks li {
@@ -91,7 +94,9 @@ body {
 .contentSectionInner {
 	background-color:rgba(255,255,255,0.7);
 	border-radius:10px;
-	padding:5px;
+	border: solid black 2px;
+	padding:0px;
+	overflow:hidden;
 	
 }
 .contentSectionInner h1{
@@ -101,6 +106,8 @@ body {
 	font-family: 'xol', Arial;
     font-size:1.4rem;	
     margin:0;
+    border-bottom:solid black 2px;
+    
 }
 
 .contentSectionInner h2 {
@@ -119,8 +126,7 @@ body {
 }
 
 .article a, .project a {
-	font-family: 'xol', Arial;
-	font-style:italic;
+	font-family: Arial;
 }
 
 .project {
@@ -140,11 +146,22 @@ body {
 
 /* ---------- IMAGE RELATED ---------- */
 
-.profilePhoto img{
-	max-width:150px;
+.profilePhotoSmall img{
+	max-width:130px;
 	max-height:auto;
 	margin-right: 20px;
+	margin-left:10px;
 	border-radius: 50%;
+	border: solid white 4px;
+}
+
+.profilePhotoLarge img{
+	max-width:200px;
+	max-height:auto;
+	margin-right: 20px;
+	margin-left:10px;
+	border-radius: 50%;
+	border: solid white 4px;
 }
 
 .contentPhoto img{
@@ -186,7 +203,7 @@ body {
 
 .iconContainer {
 	display:inline-block;
-	width:19.375%;
+	width:24%;
 }
 
 .iconContainer p {

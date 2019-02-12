@@ -3,6 +3,7 @@
 	<head>
 		<title>Home : Michael Kafarowski</title>
 		<link rel="stylesheet" type="text/css" href="./scripts/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	</head>
 	<body>
 		<div id="mainWindow">
@@ -10,14 +11,14 @@
 				<div id="navBar">
 					<div id="navBarInner">
 						<div id="navBarBanner">
-							<!--- <img src="./images/navBanner.jpg" alt="Banner"/> -->
 							<h1>Michael Kafarowski</h1>
 							<h3><script src="/scripts/title.js"></script></h3>
 						</div>
 						<div id="navBarLinks">
 							<ul>
-								<li><a href="/">Home</a></li>
+								<li class="active"><a href="/">Home</a></li>
 								<li><a href="/projects/">Projects</a></li>
+								<li><a href="/about/">About</a></li>
 								<li><a href="/blog/">Blog</a></li>
 								<!-- 
 								<li><a href="/photography/">Photography</a></li>
@@ -33,14 +34,12 @@
 						<h1>Hello!</h1>
 			
 						<div class="article">
-							<div class="floatLeft profilePhoto">
-								<img src="./images/face.jpg" alt="Photo1"/>
+							<div class="floatRight profilePhotoSmall">
+								<img src="./images/face2.jpg" alt="Photo1"/>
 							</div>
-								<p>Welcome to my site! I'm a fourth year Mechatronics student at the University of Waterloo. I have particular interests in embedded electronics and mechanical design, but enjoy design work in many other fields such as software development.</p>
+								<p>Welcome! Here you can learn more about me and explore some of the projects I am currently working on or have completed. Some of these are school projects but others are projects I've taken on out of curiousity, self-enrichment, or just plain old fun.</p>
 
-								<p>Outside my technical passions, I enjoy dabbling in many other activities, such as archery and photography. I'm also currently studying Japanese. I view it as a personal challenge - to learn a language structured so much differently than English, and with such a complex but fascinating writing system. It has been quite the adventure so far that has taught me a lot about Japanese culture and languages in general.</p>
-
-								<p>On this site you can find some of the school and personal projects I've worked on in the past, as well as my blog. You can find links to my Github page, YouTube channel, Twitter account and other sites at the bottom of this homepage.</p>
+								<p>You can find links to my Github page, YouTube channel, Twitter account and other sites at the bottom of this homepage. Please feel free to <a href="https://www.linkedin.com/in/mkafarowski/">contact me</a>.</p>
 							</div>
 					</div>
 				</div>
@@ -56,7 +55,7 @@
 					<p>This is a work in progress (but functional!) emulator for the Nintendo Entertainment System (NES). 
 					Using it you can play games such as Super Mario Brothers and Donkey Kong from cartridge ROM memory dump files on your computer.
 					It emulates all official opcodes of the 6502 Microprocessor. It emulates the 2C07 Picture Processing Unit on a scanline-by-scanline level, though this code is still in development.</p>
-					<a href="./projects/alianes.html">Read More...</a>
+					<a href="./projects/alianes.html">Learn More...</a>
 					</div>
 				</div>
 				</div>
@@ -65,10 +64,10 @@
 				<div class="contentSectionInner">
 					<h1>Recent Video</h1>
 					<div class="article">
-					<h2>Reading EEPROM Data Without a Microcontroller</h2>
-					<p>I had salvaged a small SPI based EEPROM chip from something a while back and wanted to see if it still worked and had data stored on it. I whipped up a simple circuit to communicate with it manually and recorded the results.</p>
+					<h2>FPV Summer Progression</h2>
+					<p>This video shows my progression in flying skill during my first summer with the FPV racing quadcopter I built. I look forward to flying much more in the coming spring!</p>
 					<div style="text-align:center;">	
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/bIUdJX0o8iU" frameborder="0" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/4PaawzQUEug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 				</div>
@@ -82,30 +81,27 @@
 								<img src="./images/externlogos/github.png" alt="Github logo"/><p>Github</p>
 							</a>
 							</div>
+
+							<div class="iconContainer">
+							<a target='_blank' href="https://www.linkedin.com/in/mkafarowski/">
+									<img src="./images/externlogos/linkedin.png" alt="Linkedin logo"/><p>LinkedIn</p>
+							</a>
+							</div>
 							
 							<div class="iconContainer">
 							<a target='_blank' href="https://twitter.com/mkafarowski/">
 								<img src="./images/externlogos/twitter.png" alt="Twitter logo"/><p>Twitter</p>
 							</a>
 							</div>
-							
+
 							<div class="iconContainer">
-							<a target='_blank' href="http://steamcommunity.com/id/xr72">
-									<img src="./images/externlogos/steam.png" alt="Steam logo"/><p>Steam</p>
-							</a>
-							</div>
-							
-							<div class="iconContainer">
-							<a target='_blank' href="http://www.instructables.com/member/Aliasmk/">
-									<img src="./images/externlogos/instructables.png" alt="Instructables logo"/><p>Instructables</p>
-							</a>
-							</div>
-							
-							<div class="iconContainer">
-							<a target='_blank' href="https://www.youtube.com/channel/UCWIo_Otazasek6grsG4S6nw">
+							<a target='_blank' href="https://www.youtube.com/channel/UCVwIQ8wVJigYJv4wK9aYbrQ">
 									<img src="./images/externlogos/youtube.png" alt="Youtube logo"/><p>Youtube</p>
 							</a>
 							</div>
+							
+							
+							
 					</div>
 				</div>
 			</div>
