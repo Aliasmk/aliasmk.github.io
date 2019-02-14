@@ -193,6 +193,21 @@ body {
 	margin-top:5px;
 }
 
+.button, .button a {
+	font-family: 'xol', Arial !important;
+	color:#222277 !important;
+	text-align: right !important;
+	display:block;
+}
+
+.button:visited, .button a:visited{
+	color:#222277 !important;
+}
+
+.button:hover .button a:hover {
+	color:#3333FF !important;
+}
+
 /* ---------- CONNECT WITH ME STUFF ---------- */
 
 /* Div Only Option For Layout */
@@ -284,6 +299,10 @@ h1, h2, h3 {
 	display:block;
 	width:24%;
 	margin:0 auto;
+}
+
+.button, .button a {
+	text-align: center !important;
 }
 
 }
