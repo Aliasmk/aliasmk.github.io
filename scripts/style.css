@@ -9,7 +9,9 @@ body {
 	background-image:url("../images/bgtile.png");
 }
 #mainWindow {
-	width:1000px;
+	max-width: 1000px;
+	min-width: 350px;
+	width:70vw;
 	margin: 0 auto 1.5rem;
 }
 
@@ -38,12 +40,15 @@ body {
 #bigName {
 	display: block;
 	margin: 10px auto 0px 15px;
+	padding:0 10px;
     font-size:3em;	 
 }
 
 #nameSubscript {
 	margin: 15px;
+	padding: 0 10px;
     font-size:1.2rem;
+    display: block;
 }
 
 #navBarLinks ul {
@@ -229,6 +234,58 @@ body {
 
 
 
+@media only screen and (max-width: 700px){
 
+#bigName{
+	margin-top: 20px;
+	text-align: center;
+	font-size:2.5em;
+}
+
+#nameSubscript{
+	text-align: center;
+	font-size:1em;
+	margin: 15px;
+}
+
+#navBarLinks li {
+	display: block;
+	float:none;
+
+}
+
+#navBarLinks li a{
+	font-size:1rem;
+	padding:10px;
+}
+
+.contentPhoto, .contentPhoto img {
+	float:none !important;
+	display: block;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+
+h1, h2, h3 {
+	text-align: center;	
+}
+
+.imgwcaption {
+	width:80%;
+}
+
+.profilePhotoSmall, .profilePhotoLarge{
+	float: none !important;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.iconContainer {
+	display:block;
+	width:24%;
+	margin:0 auto;
+}
+
+}
 
 
