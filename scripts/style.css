@@ -6,7 +6,7 @@
 
 
 body {
-	background-image:url("../images/bgtile.jpg");
+	background-image:url("/images/bgtile.jpg");
 }
 #mainWindow {
 	max-width: 1000px;
@@ -25,7 +25,7 @@ body {
 
 #navBarBanner {
 	height: 200px;
-	background-image:url("../images/navBanner.jpg");
+	background-image:url("/images/navBanner.jpg");
 	background-position: -110px -80px;
 
 	color:white;
