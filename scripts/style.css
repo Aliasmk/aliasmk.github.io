@@ -49,6 +49,7 @@ body {
 	padding: 0 10px;
     font-size:1.2rem;
     display: block;
+    letter-spacing: 0px;
 }
 
 #navBarLinks ul {
@@ -169,11 +170,15 @@ body {
 }
 
 .floatLeft{
-	float:left;
+	float:left !important;
 }
 
 .floatRight{
-	float:right;
+	float:right !important;
+}
+
+.floatNone {
+	float:none !important;
 }
 
 .imgwcaption{
@@ -196,7 +201,7 @@ body {
 .button, .button a {
 	font-family: 'xol', Arial !important;
 	color:#222277 !important;
-	text-align: right !important;
+	float: right;
 	display:block;
 }
 
@@ -302,8 +307,22 @@ h1, h2, h3 {
 }
 
 .button, .button a {
-	text-align: center !important;
+	float: none;
+	text-align: center
 }
+
+#mainWindow {
+	width:95vw
+}
+
+.article, .project {
+	padding: 15px 25px;
+}
+
+#navBarBanner {
+	background-size: 1000px;
+}
+
 
 }
 
