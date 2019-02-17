@@ -164,10 +164,11 @@ body {
 	border: solid white 4px;
 }
 
-.contentPhoto img{
+.contentPhoto img, .contentPhoto video{
 	max-width:200px;
 	margin-right: 20px;
 	margin-left:20px;
+
 }
 
 .floatLeft{
@@ -280,7 +281,7 @@ body {
 	padding:10px;
 }
 
-.contentPhoto, .contentPhoto img {
+.contentPhoto, .contentPhoto img, .contentPhoto video{
 	float:none !important;
 	display: block;
 	margin:0 auto;
