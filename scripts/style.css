@@ -3,7 +3,7 @@
     src: url('Xolonium-Regular.otf');
 }
 
-
+html, body { margin: 0; padding: 0; }
 
 body {
 	background-image:url("/images/bgtile.jpg");
@@ -271,6 +271,7 @@ body {
 	margin-top: 20px;
 	text-align: center;
 	font-size:2.5em;
+	margin:10px auto 0 0 !important;
 }
 
 #nameSubscript{
@@ -279,14 +280,8 @@ body {
 	margin: 15px;
 }
 
-#navBarLinks li {
-	display: block;
-	float:none;
-
-}
-
 #navBarLinks li a{
-	font-size:1rem;
+	font-size:1.4rem;
 	padding:10px;
 }
 
@@ -338,4 +333,6 @@ h1, h2, h3 {
 
 
 }
+
+
 
