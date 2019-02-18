@@ -280,8 +280,14 @@ body {
 	margin: 15px;
 }
 
+#navBarLinks li {
+	display: block;
+	float:none;
+
+}
+
 #navBarLinks li a{
-	font-size:1.4rem;
+	font-size:1rem;
 	padding:10px;
 }
 
@@ -333,6 +339,5 @@ h1, h2, h3 {
 
 
 }
-
 
 
