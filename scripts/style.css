@@ -318,8 +318,10 @@ h1, h2, h3 {
 }
 
 .button, .button a {
-	float: none;
-	text-align: center
+	float: none !important;
+	display: block;
+	text-align: center;
+	padding:10px;
 }
 
 #mainWindow {
