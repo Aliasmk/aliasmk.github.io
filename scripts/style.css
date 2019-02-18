@@ -10,7 +10,7 @@ body {
 }
 #mainWindow {
 	max-width: 1000px;
-	min-width: 350px;
+	min-width: 300px;
 	width:85vw;
 	margin: 0 auto 1.5rem;
 }
@@ -144,6 +144,15 @@ body {
 
 .project a:hover{
 	color:#fff;
+}
+
+#footer {
+	text-align: center;
+	color:#111;
+}
+
+#footer img {
+	width:15px;
 }
 
 /* ---------- IMAGE RELATED ---------- */
@@ -327,5 +336,4 @@ h1, h2, h3 {
 
 
 }
-
 
