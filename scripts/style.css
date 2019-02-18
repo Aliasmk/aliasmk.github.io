@@ -3,7 +3,7 @@
     src: url('Xolonium-Regular.otf');
 }
 
-html, body { margin: 0; padding: 0; }
+html, body { margin: 10px, 0, 0, 0; padding: 0; }
 
 body {
 	background-image:url("/images/bgtile.jpg");
