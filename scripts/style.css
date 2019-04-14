@@ -7,6 +7,8 @@ html, body { margin: 10px, 0, 0, 0; padding: 0; }
 
 body {
 	background-image:url("/images/bgtile.jpg");
+	background-color: #3a3a40;
+
 }
 #mainWindow {
 	max-width: 1000px;
@@ -17,7 +19,7 @@ body {
 
 /* ---------- NAV BAR ---------- */
 #navBar {
-	background-color:#aaa;
+	background-color:#121;
 	border-radius:10px;
 	overflow:hidden;
 	border:solid black 2px;
@@ -67,20 +69,20 @@ body {
 }
 
 #navBarLinks li a {
-	display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
     font-family: 'xol', Arial;
     font-size:1.4rem;	
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
 }
 
 #navBarLinks li a:hover {
 	background-color:#555;
 }
 
-.active {
+#navBarLinks .active {
 	background-color:#444;
 }
 
@@ -231,7 +233,7 @@ body {
 
 .iconContainer {
 	display:inline-block;
-	width:24%;
+	width:19.5%;
 }
 
 .iconContainer p {
