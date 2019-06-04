@@ -118,6 +118,13 @@ body {
 	font-weight:normal;
 }
 
+.contentSectionInner h3 {
+	font-family: 'xol', Arial;
+	font-size:1em;
+	margin-top:0;
+	font-weight:normal;
+}
+
 .article, .project {
 	padding: 15px 55px;
 	overflow: hidden;
