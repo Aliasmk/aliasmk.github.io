@@ -25,7 +25,7 @@
 		<link rel="canonical" href="https://michael.kafarowski.com/blog/20190604-may-projects/" />
 		<meta property="og:description" content="A summary of the small projects I worked on in May 2019 and what I learned from them."/>
 		<meta name="description" content="A summary of the small projects I worked on in May 2019 and what I learned from them."/>
-		<meta name="keywords" content="michael kafarowski, michael, kafarowski, projects"/>
+		<meta name="keywords" content="michael kafarowski, michael, kafarowski, projects, smallworld, planet, game, coffee"/>
 	</head>
 	
 	<body>
@@ -90,8 +90,8 @@
 
 							<p>Finally, I had issues with object mass. Changing the object's rigidbody mass to something other than 1 resulted in it falling slower or faster than other objects (despite mass being irrelevant to gravitational acceleration <a href="https://www.youtube.com/watch?v=5C5_dOEyAfk">in real life</a>). By changing the ForceMode of Rigidbody.AddForce() to Accelleration, the issue was solved, and I could change the masses of objects while still having them fall at the same rate. Now shooting an anvil with a foam dart blaster doesn't send it 40 feet.</p> 
 
-							<div class="codeblock">rb.AddForce(Vector3.Normalize(planetRelativePosition) * gravity); //previous, not working<br><br>
-							AddForce(Vector3.Normalize(planetRelativePosition) * gravity, ForceMode.Acceleration); //fixed</div>
+							<div class="codeblock">rb.AddForce(Vector3.Normalize(gravityVector) * gravity); //previous, not working<br><br>
+							AddForce(Vector3.Normalize(gravityVector) * gravity, ForceMode.Acceleration); //fixed</div>
 
 							<p>Right now there is only one planet, and the player can't hop into a ship and fly around the system. Once I work out how to make the planetary gameplay fun, I'll try expanding to multiple planets. I recorded and tweeted <a href="https://twitter.com/mKafarowski/status/1133922110315872257">a little bit of gameplay</a> as it stands so far.</p>
 
