@@ -54,6 +54,10 @@ body {
     letter-spacing: 0px;
 }
 
+.subtext {
+	color:#777;
+}
+
 #navBarLinks ul {
 	margin:0px;
 	padding:0px;
@@ -327,6 +331,10 @@ body {
 
 h1, h2, h3 {
 	text-align: center;	
+}
+
+.subtext {
+	display:block;
 }
 
 .imgwcaption {
