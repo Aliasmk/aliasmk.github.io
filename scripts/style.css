@@ -140,6 +140,21 @@ body {
 	font-family:  'Arial';
 }
 
+.codeblock {
+	margin: 5px 0;
+	padding: 10px;
+	font-family: monospace;
+	text-align: left;
+ overflow-x: auto;
+ white-space: nowrap;
+	display: block;
+	font-size: 1.2em;
+
+	color: #eee;
+	background-color: #334;
+	border: solid black 2px;
+}
+
 .project {
 	border-bottom: thin solid #999;
 }
@@ -202,13 +217,16 @@ body {
 }
 
 .imgwcaption{
-	width:45%;
+	
+	width:85%;
 	text-align:center;
 	margin: 0 auto; 
 }
 
 .imgwcaption img {
-	width:80%;
+	
+	max-height: 300px;
+	max-width: 80%;
 }
 
 .imgwcaption p {
