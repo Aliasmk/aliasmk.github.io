@@ -88,7 +88,7 @@
 							
 							<div class="codeblock">transform.rotation = Quaternion.FromToRotation(transform.up, gravityVector) * transform.rotation;</div>
 
-							<p>Finally, I had issues with object mass. Changing the object's rigidbody mass to something other than 1 resulted in it falling slower or faster than other objects (despite mass being irrelevant to gravitational acceleration <a href="https://www.youtube.com/watch?v=5C5_dOEyAfk">in real life</a>). By changing the ForceMode of Rigidbody.AddForce() to Accelleration, the issue was solved, and I could change the masses of objects while still having them fall at the same rate. Now shooting an anvil with a foam dart blaster doesn't send it 40 feet.</p> 
+							<p>Finally, I had issues with object mass. Changing the object's rigidbody mass to something other than 1 resulted in it falling slower or faster than other objects (despite mass being irrelevant to gravitational acceleration <a href="https://www.youtube.com/watch?v=5C5_dOEyAfk">in real life</a>). By changing the ForceMode of Rigidbody.AddForce() to Acceleration, the issue was solved, and I could change the masses of objects while still having them fall at the same rate. Now shooting an anvil with a foam dart blaster doesn't send it 40 feet, which is nice.</p> 
 
 							<div class="codeblock">rb.AddForce(Vector3.Normalize(gravityVector) * gravity); //previous, not working<br><br>
 							AddForce(Vector3.Normalize(gravityVector) * gravity, ForceMode.Acceleration); //fixed</div>
