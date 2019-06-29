@@ -3,8 +3,6 @@
     src: url('Xolonium-Regular.otf');
 }
 
-@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
-
 html, body { margin: 10px, 0, 0, 0; padding: 0; }
 
 body {
@@ -137,13 +135,13 @@ body {
 }
 
 .article p, .project p {
-	font-family: 'Arial';
+	font-family: 'Open Sans', 'Arial';
 	line-height: 150%;
 
 }
 
 .article a, .project a {
-	font-family:  'Arial';
+	font-family:  'Open Sans', 'Arial';
 }
 
 .codeblock {
