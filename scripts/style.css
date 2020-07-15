@@ -73,7 +73,7 @@ body {
 }
 
 #navBarLinks li a {
-    font-family: 'Raleway', Arial;
+    font-family: 'Exo', Arial;
     font-size:1.4rem;	
     text-align: center;
     text-decoration: none;
@@ -108,7 +108,7 @@ body {
 	padding:15px;
 	background-color:#333;
 	color:white;
-	font-family: 'Raleway', Arial;
+	font-family: 'Exo', Arial;
     font-size:1.4rem;	
     margin:0;
     border-bottom:solid black 2px;
@@ -117,14 +117,14 @@ body {
 }
 
 .contentSectionInner h2 {
-	font-family: 'Raleway', Arial;
+	font-family: 'Exo', Arial;
 	font-size:1.2em;
 	margin-top:0;
 	font-weight:bold;
 }
 
 .contentSectionInner h3 {
-	font-family: 'Raleway', Arial;
+	font-family: 'Exo', Arial;
 	font-size:1em;
 	margin-top:0;
 	font-weight:bold;
@@ -242,7 +242,7 @@ body {
 }
 
 .button, .button a {
-	font-family: 'xol', Arial !important;
+	font-family: 'Raleway', Arial !important;
 	color:#222277 !important;
 	float: right;
 	display:block;
@@ -268,7 +268,7 @@ body {
 
 .iconContainer p {
 	text-align:center;
-	font-family: 'xol', Arial;
+	font-family: 'Raleway', Arial;
 	color:black;
 }
 
@@ -292,7 +292,7 @@ body {
 	padding-right:50px;
 	margin-bottom:0px;
 	text-align:center;
-	font-family: 'xol', Arial;
+	font-family: 'Raleway', Arial;
 }
 
 
