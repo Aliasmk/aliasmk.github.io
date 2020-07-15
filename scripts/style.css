@@ -73,7 +73,7 @@ body {
 }
 
 #navBarLinks li a {
-    font-family: 'Exo', Arial;
+    font-family: 'Raleway', Arial;
     font-size:1.4rem;	
     text-align: center;
     text-decoration: none;
@@ -108,7 +108,7 @@ body {
 	padding:15px;
 	background-color:#333;
 	color:white;
-	font-family: 'Exo', Arial;
+	font-family: 'Raleway', Arial;
     font-size:1.4rem;	
     margin:0;
     border-bottom:solid black 2px;
@@ -117,14 +117,14 @@ body {
 }
 
 .contentSectionInner h2 {
-	font-family: 'Exo', Arial;
+	font-family: 'Raleway', Arial;
 	font-size:1.2em;
 	margin-top:0;
 	font-weight:bold;
 }
 
 .contentSectionInner h3 {
-	font-family: 'Exo', Arial;
+	font-family: 'Raleway', Arial;
 	font-size:1em;
 	margin-top:0;
 	font-weight:bold;
