@@ -62,7 +62,7 @@ body {
 	margin:0px;
 	padding:0px;
 	list-style-type: none;
-	background-color:#182024;
+	background-color:#202226;
     overflow: hidden;
     border-top: solid black 2px;
 }
@@ -106,7 +106,7 @@ body {
 }
 .contentSectionInner h1{
 	padding:15px;
-	background-color:#182024;
+	background-color:#202226;
 	color:white;
 	font-family: 'Raleway', Arial;
     font-size:1.4rem;	
@@ -254,7 +254,7 @@ body {
 }
 
 .button:hover .button a:hover {
-	color:#1820243FF !important;
+	color:#2022263FF !important;
 }
 
 /* ---------- CONNECT WITH ME STUFF ---------- */
