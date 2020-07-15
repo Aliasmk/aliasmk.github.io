@@ -246,6 +246,7 @@ body {
 	color:#222277 !important;
 	float: right;
 	display:block;
+	font-weight: bold;
 }
 
 .button:visited, .button a:visited{
