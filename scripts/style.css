@@ -121,6 +121,7 @@ body {
 	font-size:1.2em;
 	margin-top:0;
 	font-weight:bold;
+	border-bottom: solid gray 2px;
 }
 
 .contentSectionInner h3 {
@@ -160,12 +161,7 @@ body {
 	border: solid black 2px;
 }
 
-.project {
-	border-bottom: thin solid #999;
-}
-
 .project a{
-	padding:4px;
 	color:#337;
 	border-radius:5px;
 	
@@ -177,7 +173,7 @@ body {
 
 #footer {
 	text-align: center;
-	color:#111;
+	color:#bbb;
 }
 
 #footer img {
