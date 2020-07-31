@@ -58,6 +58,10 @@ body {
 	color:#777;
 }
 
+.hidden h1{
+	display:none !important;
+}
+
 #navBarLinks ul {
 	margin:0px;
 	padding:0px;
@@ -140,6 +144,10 @@ body {
 	font-family: 'Open Sans', 'Arial';
 	line-height: 150%;
 
+}
+
+.article li, .project li {
+	font-family: 'Open Sans', 'Arial';
 }
 
 .article a, .project a {
@@ -230,6 +238,12 @@ body {
 	max-width: 80%;
 }
 
+.imgwcaption video {
+	
+	height: 300px;
+	width: 80%;
+}
+
 .imgwcaption p {
 
 	font-style:italic;
@@ -239,18 +253,19 @@ body {
 
 .button, .button a {
 	font-family: 'Raleway', Arial !important;
-	color:#222277 !important;
+	color:#242424 !important;
 	float: right;
-	display:block;
 	font-weight: bold;
+	display: block;
+
 }
 
 .button:visited, .button a:visited{
-	color:#222277 !important;
+	color:#242424 !important;
 }
 
 .button:hover .button a:hover {
-	color:#2022263FF !important;
+	color: #2e2e2e !important;
 }
 
 /* ---------- CONNECT WITH ME STUFF ---------- */
