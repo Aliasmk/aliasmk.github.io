@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">     
+<!--<script async defer data-domain="michael.kafarowski.com" src="https://plausible.io/js/plausible.js"></script>--> 
+    <title>Java Infinite Monkey Theorem Model - Michael Kafarowski's Personal Website</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <section id="header">
+    <div id="heading">
+        <div id="title">
+            <div id="logo"></div>
+            <div id="name">Michael Kafarowski</div>
+        </div>
+        <div id="subtitle">
+            Embedded and Mechatronic Systems Designer
+        </div>
+    </div>
+    <nav id="nav">
+        
+        <a href="/" class="navtab"> Home</a>
+        
+        <a href="/about/" class="navtab"> About</a>
+        
+        <a href="/projects/" class="navtab"> Projects</a>
+        
+        <a href="/blog/" class="navtab"> Posts</a>
+        
+    </nav>
+</section>
+    <section id="content">
+      <section id="innercontent">
+        <h1 id="java-infinite-monkey-theorem-model">Java Infinite Monkey Theorem Model</h1>
+<p><img src="/assets/img/projects/imt.png" class="profilePhoto verylargepic" />
+This application simulates the Infinite Monkey theory (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding English words.</p>
+
+<p>Originally starting out as a fun side project, I continued to develop this program, making it faster and faster. Currently the limiting factor is not its speed but in fact its memory usage. The speed can be made faster with threading, I would think but the memory usage is a bit more interesting of a problem.</p>
+
+<h2 id="example-of-operation">Example of Operation</h2>
+
+<p>Various settings can be specified to create different patterns of gibberish (to simulate different monkeys, typewriters, etc). An example would be text that looks like this:</p>
+
+<p>Below is an example output of the program scanning 3.9 million possible words randomly generated, and finding 21.5 thousand real English words in just over 13 seconds.</p>
+
+<p>For this particular run, the results are shown below:</p>
+
+<div class="codesnippet">                  
+<code>Scanned a total of 3872398 possible words, 21524 of these were real. (0.56%)
+Percentage of word lengths as follows:
+2 letters: 17510 (81.35%)
+3 letters: 3716 (17.26%)
+4 letters: 281 (1.31%)
+5 letters: 16 (0.07%)
+6 letters: 1 (0%)
+7 letters: 0 (0%)</code></div>
+
+<p>Please note: this program does not simulate any physical interaction that normal monkeys may have with a typewriter.</p>
+<figure>
+    <img src="/assets/img/projects/imt/monkeytyping.jpg" alt="" />
+    <figcaption></figcaption>
+</figure>
+
+      </section>
+    </section>
+    <section id="footer">
+    <div id="social">
+        <a class="socialicon linkedin-icon" href="#">
+            <img src="/assets/img/site/social/linkedin.png"/>
+            <div>Michael Kafarowski</div>
+        </a>
+        <a class="socialicon github-icon" href="#">
+            <img src="/assets/img/site/social/github.png"/>
+            <div>Aliasmk</div>
+        </a>
+        <a class="socialicon twitter-icon" href="#">
+            <img src="/assets/img/site/social/twitter.png"/>
+            <div>@MKafarowski</div>
+        </a>
+        
+    </div>
+    <p>Website built with Jekyll and designed from scratch in pure HTML, CSS and JS!</p>
+    <p>&copy2021 Michael Kafarowski</p>
+</section>
+  </body>
+</html>
