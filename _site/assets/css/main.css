@@ -91,15 +91,23 @@ code { font-size: 1.2em; padding-left: 0.2em; padding-right: 0.2em; color: #3232
 .linkedin-icon img { max-width: 2.25em; }
 
 /* 450 px */
-@media (min-width: 28em) { #title { font-size: 2.5em; } #nav, #subtitle { font-size: 1.1em; } }
-
+@media (min-width: 28em) { #title { font-size: 2.5em; }
+  #nav, #subtitle { font-size: 1.1em; } }
 /* 704 px */
-@media (min-width: 44em) { h1 { text-align: left; } #header { background-position-y: -4em; } #nav, #subtitle { font-size: 1.3em; } #heading { padding: 3em; } .project { text-align: left; display: grid; grid-template-areas: "ptitle ptitle" "pimg pdesc" "pbuttons pbuttons"; } .project h2 { margin: 1em 0; } .project .project-desc { padding-left: 2em; } .project .project-buttons { justify-content: flex-end; } .button { flex: initial; } .profilePhoto { float: right; margin: 1em; } img { max-height: 20em; } }
-
+@media (min-width: 44em) { h1 { text-align: left; }
+  #header { background-position-y: -4em; }
+  #nav, #subtitle { font-size: 1.3em; }
+  #heading { padding: 3em; }
+  .project { text-align: left; display: grid; grid-template-areas: "ptitle ptitle" "pimg pdesc" "pbuttons pbuttons"; }
+  .project h2 { margin: 1em 0; }
+  .project .project-desc { padding-left: 2em; }
+  .project .project-buttons { justify-content: flex-end; }
+  .button { flex: initial; }
+  .profilePhoto { float: right; margin: 1em; }
+  img { max-height: 20em; } }
 /* 1008px */
-@media (min-width: 63em) { #header { background-position-y: -8em; background-size: 100%; } img { max-height: 25em; } }
-
+@media (min-width: 63em) { #header { background-position-y: -8em; background-size: 100%; }
+  img { max-height: 25em; } }
 /* 1440px */
-@media (min-width: 89em) { #header { background-position-y: -12em; background-size: 100%; } img { max-height: 25em; } }
-
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 89em) { #header { background-position-y: -12em; background-size: 100%; }
+  img { max-height: 25em; } }
