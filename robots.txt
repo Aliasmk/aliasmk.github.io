@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /projects/haptic_eye/
+Disallow: /projects/emrsnxeos/
+Disallow: /projects/pm3000/
+Disallow: /projects/quadcopter/
+Disallow: /projects/rovcontroller/

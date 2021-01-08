@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog/
-description: Tutorials and blog posts written by Michael Kafarowski
+description: Browse tutorials and blog posts written by Michael Kafarowski
 ---
 
 # Blog and Tutorials

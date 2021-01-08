@@ -5,6 +5,7 @@ year: 2019-2020
 imgurl: /assets/img/projects/HapticEyeV3.jpg
 imgalt: Image of HapticEye PCB
 desc: Regularly faced with the problem of waking up in the middle of the night and being unable to open my eyes to read a normal clock, I designed a clock that uses an alternative method to communicate the time. The user can choose from a haptic mode - where the time is relayed by a sequence of vibration pulses - or audio mode, where the clock speaks the time out loud.
+sitemap: false
 btns: 
 - {text: Hackaday.io Page, link: "https://hackaday.io/project/163588-no-eye-haptic-clock", active: true}
 - {text: Project Github, link: "https://github.com/Aliasmk/HapticEye-Clock", active: true}

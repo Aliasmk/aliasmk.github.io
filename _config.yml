@@ -1,7 +1,10 @@
 url: "https://michael.kafarowski.com"
 baseurl: "/"
+
 layout: default
 title: "Michael Kafarowski"
+plugins:
+  - jekyll-sitemap
 permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:
