@@ -6,6 +6,7 @@ imgurl: /assets/img/projects/alianesanimate.gif
 imgalt: Animated view of ALIAneS playing Donkey Kong
 active: true
 desc: This is a work in progress (but functional!) emulator for the Nintendo Entertainment System (NES). Using it you can play games such as Super Mario Brothers and Donkey Kong from cartridge ROM memory dump files on your computer. It emulates all official opcodes of the 6502 Microprocessor. It emulates the 2C07 Picture Processing Unit on a scanline-by-scanline level, though this code is still in development.
+description: Learn more about ALIAneS, an NES emulator written from scratch in C++.
 btns: 
 - {text: Learn More..., link: "/projects/alianes/", active: true}
 ---

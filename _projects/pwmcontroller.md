@@ -6,6 +6,7 @@ imgurl: /assets/img/projects/pwm.jpg
 imgalt: Circuit Board of PWM Controller
 active: true
 desc: This controller board was developed to efficiently dim an off-the-shelf 12V LED strip, for use as accent lighting on a boat. I designed the circuit and PCB from scratch, and assembled and tested it myself.
+description: Learn more about PWM and how it can be used to efficiently dim LEDs.
 btns: 
 - {text: Learn More..., link: "/projects/pwmcontroller/", active: true}
 ---

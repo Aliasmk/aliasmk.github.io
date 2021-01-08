@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Homepage
+description: Explore projects, tutorials and blog posts by Michael Kafarowski, a Canadian mechatronics and embedded systems developer.
 ---
 
 # What Should We Build Next?

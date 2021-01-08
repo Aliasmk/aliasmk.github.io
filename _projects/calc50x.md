@@ -5,6 +5,7 @@ year: 2020
 imgurl: /assets/img/projects/calc50x.jpg
 imgalt: UI of calc.50x.ca
 desc: My favorite website for converting between hexadecimal, decimal and binary went down in November 2020, so I set out to recreate it from scratch. I used it as an opportunity to learn JavaScript and CSS Grid. Best of all, I got my favorite converter app back for my own use on other projects!
+description: Learn more about calc.50x.ca, a decimal, binary, hexadecimal, and octal converter utility.
 btns: 
 - {text: Visit Now!, link: "http://calc.50x.ca", active: true}
 - {text: Learn More, link: "/projects/calc50x", active: true}

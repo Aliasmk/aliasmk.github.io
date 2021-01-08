@@ -6,6 +6,7 @@ imgurl: /assets/img/projects/imt.png
 imgalt: Sample output of the IMT program
 active: true
 desc: This application simulates the Infinite Monkey theory (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding English words. It has evolved from its first form to become much faster by implementing more efficient search algorithms.
+description: Learn more about the Infinite Monkey Theory programming experiment.
 btns: 
 - {text: Learn More..., link: "/projects/imt/", active: true}
 ---
