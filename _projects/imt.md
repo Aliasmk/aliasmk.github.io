@@ -9,6 +9,8 @@ desc: This application simulates the Infinite Monkey theory (which states that a
 description: Learn more about the Infinite Monkey Theory programming experiment.
 btns: 
 - {text: Learn More..., link: "/projects/imt/", active: true}
+
+redirect_from: /projects/imt.html
 ---
 
 # Java Infinite Monkey Theorem Model

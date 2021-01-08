@@ -5,6 +5,7 @@ layout: default
 title: "Michael Kafarowski"
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:

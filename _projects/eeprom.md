@@ -9,6 +9,8 @@ desc: An experiment in alternative techniques over the use of microcontrollers t
 description: Learn more about the electrical signals that take place when reading an EEPROM
 btns: 
 - {text: Learn More..., link: "/projects/eeprom/", active: true}
+
+redirect_from: /projects/eeprom.html
 ---
 
 <h1 class="override_caselock">NO-μCONTROLLER EEPROM READER</h1>

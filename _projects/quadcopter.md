@@ -8,4 +8,6 @@ desc: I have been a fan of R/C cars and helicopters for a long time, and was fas
 btns: 
 - {text: Flying Skill Progression Video, link: "https://www.youtube.com/watch?v=4PaawzQUEug", active: true}
 - {text: More Info Coming Soon!, link: "#", active: false}
+
+sitemap: false
 ---

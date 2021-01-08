@@ -9,6 +9,8 @@ desc: This is a work in progress (but functional!) emulator for the Nintendo Ent
 description: Learn more about ALIAneS, an NES emulator written from scratch in C++.
 btns: 
 - {text: Learn More..., link: "/projects/alianes/", active: true}
+
+redirect_from: /projects/alianes.html
 ---
 
 <h1 class="override_caselock">ALIAneS NINTENDO ENTERTAINMENT SYSTEM EMULATOR</h1>

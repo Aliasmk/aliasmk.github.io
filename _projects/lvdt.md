@@ -9,6 +9,8 @@ desc: An experiment in alternative techniques over the use of microcontrollers t
 description: Learn more about the home-made LVDT built in part by Michael Kafarowski
 btns: 
 - {text: Learn More..., link: "/projects/lvdt/", active: true}
+
+redirect_from: /projects/lvdt.html
 ---
 
 # Linear Variable Differential Transformer

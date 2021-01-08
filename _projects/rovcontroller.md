@@ -8,4 +8,6 @@ desc: As part of a design project to build a (Remotely Operated Vehicle) ROV to 
 btns: 
 - {text: Pool Test Video, link: "https://www.youtube.com/watch?v=X_h5jI2FC8s", active: true}
 - {text: More Info Coming Soon!, link: "#", active: false}
+
+sitemap: false
 ---

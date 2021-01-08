@@ -260,6 +260,7 @@ DEPENDENCIES
   github-pages (~> 209)
   jekyll (= 3.9.0)
   jekyll-feed (~> 0.12)
+  jekyll-redirect-from
   jekyll-sitemap
   tzinfo (~> 1.2)
   tzinfo-data

@@ -9,6 +9,8 @@ desc: This controller board was developed to efficiently dim an off-the-shelf 12
 description: Learn more about PWM and how it can be used to efficiently dim LEDs.
 btns: 
 - {text: Learn More..., link: "/projects/pwmcontroller/", active: true}
+
+redirect_from: /projects/pwmcontroller.html
 ---
 
 # LED Strip PWM Controller
