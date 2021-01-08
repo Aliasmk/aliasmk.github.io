@@ -1,8 +1,0 @@
-url: "https://michael.kafarowski.com"
-baseurl: "/"
-layout: default
-title: "Michael Kafarowski's Personal Website"
-permalink: /blog/:year/:month/:day/:title/
-collections:
-  projects:
-    output: true
