@@ -44,21 +44,24 @@ Welcome to the TouchGFX Designer! Create a new project targeting the STM32F469I 
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/Select469i.PNG" 
-caption="Target selection when first creating a project. We'll use the STM32F469I in future tutorials, so select it now." %}
+caption="Target selection when first creating a project. We'll use the STM32F469I in future tutorials, so select it now." 
+alttext="Screenshot of target selection window with the 469i board highlighted."%}
 
 
 The main TouchGFX window consists of 4 major parts - the left-hand Sidebar, the main Canvas View, the right-hand side Options Box, and the top Menu Bar. In the Sidebar you change tabs to select between displaying a palette of widgets, a list of screens and objects in your application, and any custom containers you've created (more on that in a future post). The main Canvas section shows the view of your application as if you were looking at it on the target screen. The Options box on the left will populate with options when you select an object.
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/Overview.PNG" 
-caption="The main TouchGFX Designer user interface." %}
+caption="The main TouchGFX Designer user interface."
+alttext="Screenshot of the main TouchGFX designer user interface" %}
 
 
 TouchGFX starts us out with a default screen. An application can have a number of independent screens. We'll start by adding a background to our default screen. Scroll down the widget window in the left Sidebar until you find a Box widget. Drag the box into the Canvas and grab the handles to scale it to the full size of the screen. Notice how the designer snaps your object to points of interest - namely the edges and middle of the screen. You'll notice that because the box is selected, the Options Sidebar has lit up with a few options, such as the widget name (currently box1), its coordinates and size, and the color and opacity. Name your box something meaningful, like "background". Let's change the background color by clicking on the dropdown under Color and selecting your preferred color.
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/canvasWithBackground.JPG" 
-caption="If you're curious that's #FF30343A (a.k.a. 'Gunship Grey', at least according to me)" %}
+caption="If you're curious that's #FF30343A (a.k.a. 'Gunship Grey', at least according to me)" 
+alttext="A dark grey box widget added to to the canvas to create a background"%}
 
 
 With our background in place, let's add some text. Return to the widget menu of the left sidebar (the tab with the square and the +) and find the Text Area widget. Drag it into the middle of the view. If you select it, you'll find options in the Option Sidebar that let you change the displayed text, the color, the alignment, etc. Change the color to something visible and the text to Hello World! or your test string of choice!
@@ -69,13 +72,17 @@ If we wanted a different font for each textbox we would need to make a typograph
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/canvasTextJP.JPG" 
-caption="TouchGFX supports Unicode, so you can write text in most languages. The trick is to set the typography to a ttf font that supports the characters, such as Meiryo for Japanese. You may have to manually install the font to the TouchGFX/assets/fonts folder in the project source." %}
+caption="TouchGFX supports Unicode, so you can write text in most languages. The trick is to set the typography to a ttf font that supports the characters, such as Meiryo for Japanese. You may have to manually install the font to the TouchGFX/assets/fonts folder in the project source." 
+alttext="Japanese characters in a textbox"
+%}
 
 You'll notice that by default the TouchGFX designer generates three typographies - default, large and small. We can customize the font and size of each typography by clicking on Texts in the top menu bar, then clicking on the Typographies tab. If you wish, you can add your own.
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/Typographies.PNG" 
-caption="Changing the typography font and size. Navigate to this page by clicking the Texts button in the Menu bar and then clicking the Typographies tab." %}
+caption="Changing the typography font and size. Navigate to this page by clicking the Texts button in the Menu bar and then clicking the Typographies tab." 
+alttext="A screenshot of the Typographies tab"
+%}
 
 
 Take this time to change the font and size of the typographies to whatever you would like. I changed the Large typography to Roboto Condensed, at 45 pixel size. The fonts that appear depend on what is available on your computer. Other settings, such as wildcards and fallbacks can be left as they are for now. We'll cover them in a future tutorial, but try and guess what they do based on the explanation of typographies above. (Here's a hint: by default, the TouchGFX designer will only generate glyphs for letters it knows for sure will be required).
@@ -86,7 +93,9 @@ Lets see it in action! Click the Run Simulator button, or if you have the dev bo
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/canvasWithText.PNG" 
-caption="Hello TouchGFX! -The World, probably" %}
+caption="Hello TouchGFX! -The World, probably" 
+alttext="The completed project"
+%}
 
 
 ## Diving a Little Deeper
@@ -101,7 +110,9 @@ Add a second interaction, and choose the trigger to be Button is Clicked. Your b
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2020-07-30-touchgfx-part-0/interactionsmenu.JPG" 
-caption="Fade Out, Fade In. Fade Out, Fade In. Fade Out..." %}
+caption="Fade Out, Fade In. Fade Out, Fade In. Fade Out..." 
+alttext="Screenshot of the Interactions menu of the TouchGFX designer"
+%}
 
 
 ## The Tip of the Iceberg
@@ -123,7 +134,7 @@ Here are some notes that may be of interest/use to you at this stage.
 
 * If animations aren't smooth on the target, it may be because optimizations are turned off! We'll touch more on this in the next tutorial.
 
-* I've encounted a bug where the simulator will work fine, but the target will refuse to display the screen on startup. Strangely, adding an invisible button tends to fix this issue, and I'm not sure why.
+* I've encountered a bug where the simulator will work fine, but the target will refuse to display the screen on startup. Strangely, adding an invisible button tends to fix this issue, and I'm not sure why.
 
 * If you have a font you would like to use that doesn't show up in the list on the typographies page, place the TTF file in the TouchGFX/assets/fonts/ folder in the root of the project.
 
@@ -131,4 +142,4 @@ Here are some notes that may be of interest/use to you at this stage.
 
 See you at the next tutorial!
 
-<a class="button" href="/blog/index.html">Back to Blog</a>
+<a class="button" href="/blog/">Back to Blog</a>

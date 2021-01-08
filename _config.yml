@@ -1,7 +1,7 @@
 url: "https://michael.kafarowski.com"
 baseurl: "/"
 layout: default
-title: "Michael Kafarowski's Personal Website"
+title: "Michael Kafarowski"
 permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:

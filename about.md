@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+description: Learn more about Michael Kafarowski, a Canadian Mechatronics and Embedded Systems Developer
 ---
 
 # About Michael Kafarowski

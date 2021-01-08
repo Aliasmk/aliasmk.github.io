@@ -45,7 +45,9 @@ As for the circuit, here is the diagram.
 
 {% include imgwcaption.html 
 imgurl="/assets/img/projects/eeprom/schematic.jpg" 
-caption="The circuit diagram. Note the 5M resistor... it's not a very elegant circuit. At the time of making it I didn't fully understand how to use the 555 timer chip." %}
+caption="The circuit diagram. Note the 5M resistor... it's not a very elegant circuit. At the time of making it I didn't fully understand how to use the 555 timer chip." 
+alttext="Circuit diagram showing the connections between the EEPROM and the 555 timer chip"
+%}
 
 
 At one byte per 30 seconds, this is obviously not a practical way to read or program an EEPROM! This project was done mostly to demonstrate how chips are interfaced with by microcontrollers, on a very slow time scale. Indeed, microcontrollers interface with these chips in the same way, albeit with electrical signals instead of pushbuttons and of course, much faster speeds.

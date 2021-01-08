@@ -37,4 +37,6 @@ Percentage of word lengths as follows:
 
 Please note: this program does not simulate any physical interaction that normal monkeys may have with a typewriter.
 {% include imgwcaption.html 
-imgurl="/assets/img/projects/imt/monkeytyping.jpg" %}
+imgurl="/assets/img/projects/imt/monkeytyping.jpg" 
+alttext="A monkey ready to cause some typographical shenanigans" 
+%}

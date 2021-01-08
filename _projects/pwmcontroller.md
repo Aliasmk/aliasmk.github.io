@@ -26,7 +26,8 @@ PWM works by rapidly switching on and off a voltage source in a square wave patt
 
 {% include imgwcaption.html 
 imgurl="/assets/img/projects/pwm/pwmschematic.png" 
-caption="The completed schematic in Eagle CAD" %}
+caption="The completed schematic in Eagle CAD"
+alttext="The completed schematic in Eagle CAD" %}
 
 The dimmer was to consist of a square wave oscillator and a switch to drive the LED strip. The oscillator was built with a 555 timer configured as an astable multivibrator with different RC time constants connected to the discharge, threshold and trigger pin. A capacitor, two diodes and a variable resistor was used to form the duty cycle configuration circuit. Turning the potentiometer knob adjusted the balance of the resistance and thereby changes the duty cycle of the square wave.
 
@@ -34,7 +35,8 @@ In order to drive the high current of the LED strip a IRF630 MOSFET was used by 
 
 {% include imgwcaption.html 
 imgurl="/assets/img/projects/pwm/magicdigikey.jpg" 
-caption="Next-day delivery for only $8 flat makes every Digikey.ca box that comes to my door a magical box." %}
+caption="Next-day delivery for only $8 flat makes every Digikey.ca box that comes to my door a magical box."
+alttext="Image of the PWM Controller driving an LED strip, making the inside of a digikey box glow" %}
 
 
 ## PCB Design
@@ -44,7 +46,8 @@ As this controller was to be used beyond just an experimental phase, a more perm
 
 {% include imgwcaption.html 
 imgurl="/assets/img/projects/pwm/pwm.jpg" 
-caption="Purple PCB from OSHPark" %}
+caption="Purple PCB from OSHPark"
+alttext="Purple PCB from OSCPark" %}
 
 A week later I got my three boards back and I was super happy with how good they looked. I really like OSH Park’s quality of work and I think the purple solder mask looks really nice. It was my fault for not catching this before accepting the order, but for some reason the silkscreen layer with my component values didn’t make it on to either side of the board. In addition, I misjudged the size of a resistor and a capacitor footprint, and ended up having to get creative with the leads to get them to fit. However apart from those issues, the board worked like a charm.
 

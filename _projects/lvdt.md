@@ -6,6 +6,7 @@ imgurl: /assets/img/projects/lvdt.jpg
 imgalt: LVDT measuring a gauge block
 active: true
 desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. Even though it is not a practical way of using these ICs, it is good educational "slow motion" look at the signals.
+description: Learn more about the home-made LVDT built in part by Michael Kafarowski
 btns: 
 - {text: Learn More..., link: "/projects/lvdt/", active: true}
 ---
