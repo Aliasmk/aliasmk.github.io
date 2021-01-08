@@ -1,0 +1,111 @@
+- name: EOS Theatre Moving Light Controller
+  year: 2020 - In Progress
+  imgurl: /assets/img/projects/eosoverview.jpg
+  imgalt: EMRSNxEOS on a breadboard
+  active: true
+  desc: A collaboration with [Emerson Kafarowski](ekafarowski.com), the EMRSNxEOS Moving Light controller is an open-source portable programming wing for use with theatrical lighting systems. Lighting consoles are generally large and expensive, limiting their use in small and non-traditional venues. The goal is to build a customizable hardware platform for lighting designers that maintains the efficiency and ease of use granted by more expensive lighting consoles. The system is developed in C++ for the ESP32, and communicates with the EOS lighting software using Open Sound Control (OSC).
+  btns: 
+  - {text: More Info Coming Soon, link: "#", active: false}
+
+- name: calc.50x.ca Hex, Decimal, Binary Converter
+  year: 2020
+  imgurl: /assets/img/projects/calc50x.jpg
+  imgalt: UI of calc.50x.ca
+  active: true
+  desc: My favorite website for converting between hexadecimal, decimal and binary went down in November 2020, so I set out to recreate it from scratch. I used it as an opportunity to learn JavaScript and CSS Grid. Best of all, I got my favorite converter app back for my own use on other projects!
+  btns: 
+  - {text: Visit Now!, link: "http://calc.50x.ca", active: true}
+
+- name: HapticEye Clock
+  year: 2019-2020
+  imgurl: /assets/img/projects/HapticEyeV3.jpg
+  imgalt: Image of HapticEye PCB
+  active: true
+  desc: Regularly faced with the problem of waking up in the middle of the night and being unable to open my eyes to read a normal clock, I designed a clock that uses an alternative method to communicate the time. The user can choose from a haptic mode - where the time is relayed by a sequence of vibration pulses - or audio mode, where the clock speaks the time out loud.
+  btns: 
+  - {text: Hackaday.io Page, link: "https://hackaday.io/project/163588-no-eye-haptic-clock", active: true}
+  - {text: Project Github, link: "https://github.com/Aliasmk/HapticEye-Clock", active: true}
+
+- name: GranolaPods Modular Trail Mix Making Machine
+  year: 2019
+  imgurl: /assets/img/projects/gpunity.jpg
+  imgalt: Closeup of GranolaPods PCB
+  active: true
+  desc: GranolaPods is a modular trail mix making machine, built in a team of four for our University of Waterloo Mechatronics Fourth Year Design Project (FYDP). I designed the circuit, PCB and firmware for a modular motor control board. I also developed the front-end user interface and back-end system control software.
+  btns: 
+  - {text: Development Video, link: "https://www.youtube.com/watch?v=NxC_GapGs20", active: true}
+  - {text: Project Github, link: "https://github.com/Aliasmk/GranolaPods", active: true}
+
+- name: 5" FPV Racing Quadcopter
+  year: 2018
+  imgurl: /assets/img/projects/tyranttop.jpg
+  imgalt: Top view of drone, next to a plant
+  active: true
+  desc: I have been a fan of R/C cars and helicopters for a long time, and was fascinated by the speed and agility of racing quadcopters when they first appeared on the market. As my first foray into the hobby and to learn more about these machines, I built my own 5" FPV racing quadcopter.
+  btns: 
+  - {text: Flying Skill Progression Video, link: "https://www.youtube.com/watch?v=4PaawzQUEug", active: true}
+  - {text: More Info Coming Soon!, link: "#", active: false}
+ 
+- name: RS-485 ROV Controller with Telemetry Link
+  year: 2017
+  imgurl: /assets/img/projects/controller.jpg
+  imgalt: Image of Controller
+  active: true
+  desc: As part of a design project to build a (Remotely Operated Vehicle) ROV to navigate an underwater course, I designed an AVR-based controller to drive the ROV by tele-operation over RS-485. In addition to the tele-op mode it also features a telemetry readout from sensors aboard the ROV and a macro record/playback function.
+  btns: 
+  - {text: Pool Test Video, link: "https://www.youtube.com/watch?v=X_h5jI2FC8s", active: true}
+  - {text: More Info Coming Soon!, link: "#", active: false}
+
+- name: ALIAneS Nintendo Entertainment System Emulator
+  year: 2016
+  imgurl: /assets/img/projects/alianesanimate.gif
+  imgalt: Animated view of ALIAneS playing Donkey Kong
+  active: true
+  desc: This is a work in progress (but functional!) emulator for the Nintendo Entertainment System (NES). Using it you can play games such as Super Mario Brothers and Donkey Kong from cartridge ROM memory dump files on your computer. It emulates all official opcodes of the 6502 Microprocessor. It emulates the 2C07 Picture Processing Unit on a scanline-by-scanline level, though this code is still in development.
+  btns: 
+  - {text: Learn More..., link: "/projects/alianes.html", active: true}
+
+  - name: LED Strip PWM Controller
+  year: 2016
+  imgurl: /assets/img/projects/pwm.jpg
+  imgalt: Circuit Board of PWM Controller
+  active: true
+  desc: This controller board was developed to efficiently dim an off-the-shelf 12V LED strip, for use as accent lighting on a boat. I designed the circuit and PCB from scratch, and assembled and tested it myself.
+  btns: 
+  - {text: Learn More..., link: "/projects/pwmcontroller.html", active: true}
+
+- name: No-μController EEPROM Reader
+  year: 2016
+  imgurl: /assets/img/projects/eeprom.png
+  imgalt: Circuit on a breadboard
+  active: true
+  desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. Even though it is not a practical way of using these ICs, it is good educational "slow motion" look at the signals.
+  btns: 
+  - {text: Learn More..., link: "/projects/eeprom.html", active: true}
+
+- name: Linear Variable Differential Transformer
+  year: 2015
+  imgurl: /assets/img/projects/lvdt.jpg
+  imgalt: LVDT measuring a gauge block
+  active: true
+  desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. Even though it is not a practical way of using these ICs, it is good educational "slow motion" look at the signals.
+  btns: 
+  - {text: Learn More..., link: "/projects/lvdt.html", active: true}
+
+- name: Java Infinite Monkey Theorem Model
+  year: 2013-2014
+  imgurl: /assets/img/projects/imt.png
+  imgalt: Sample output of the IMT program
+  active: true
+  desc: This application simulates the Infinite Monkey theory (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding English words. It has evolved from its first form to become much faster by implementing more efficient search algorithms.
+  btns: 
+  - {text: Learn More..., link: "/projects/imt.html", active: true}
+
+- name: Pacman 3000
+  year: 2012
+  imgurl: /assets/img/projects/pm3000.jpg
+  imgalt: Screenshot of Pacman3000
+  active: true
+  desc: Pacman 3000 was developed as a demo for a grade 9 business trade show. Starring Pacman in a fully 3D world, the player must collect coins while navigating the terrain, avoiding ghosts and laser turrets.
+  btns: 
+  - {text: More Info Coming Soon!, link: "#", active: false}

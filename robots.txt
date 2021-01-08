@@ -1,5 +1,0 @@
-User-Agent: *
-Disallow: 
-
-Sitemap: https://michael.kafarowski.com/sitemap_index.xml
-Sitemap: https://michael.kafarowski.com/sitemap.xml
