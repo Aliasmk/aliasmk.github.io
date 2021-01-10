@@ -1,6 +1,6 @@
 ---
 layout: default
-title: calc.50x.ca Hex, Decimal, Binary Converter
+title: calc.50x.ca Hex Decimal Binary Converter
 year: 2020
 imgurl: /assets/img/projects/calc50x.jpg
 imgalt: UI of calc.50x.ca
@@ -13,9 +13,9 @@ btns:
 
 # Calc.50x.ca Programming Calculator
 <img src="/assets/img/projects/calc50x.jpg" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
-Ever since I began developing my [NES Emulator](/projects/alianes/) back in 2014, I had a favorite online utility to convert between binary, hexadecimal, and decimal. My favorite feature was that you could click on the bits in the binary representation to directly set or clear them. I liked this because it helped me decode offsets and bitmasks for CPU registers. 
+[calc.50x.ca](https://calc.50x.ca) is a free online utility I developed that converts numbers between Decimal, Hexadecimal, Octal, and Binary in real time. It also features the ability to directly set and clear bits in the binary representation. On the site you can read more about different numbering systems, as well as how to count to 1023 on two hands! 
 
-On a day just like any other in November 2020, my workflow was broken! My favorite utility was down! It seemed like the domain expired and someone else had bought it out and stuck a wordpress site on it.
+The project is a replacement for the now-defunct calc.50x.eu - a similar calculator that I had used ever since I started developing my [NES Emulator](/projects/alianes/) in 2014. However, on a day just like any other in November 2020, my workflow was broken! The utility was down! It seemed like the domain expired and someone else had bought it out and stuck a wordpress site on it.
 
 For weeks I hoped that someone would make a suitable replacement... until I realized that someone could be **me**! I already had HTML and CSS experience, so all I needed was to learn enough Javascript to implement it. I had never used Javascript for web in any real capacity before, so I used my tried-and true method for learning a new technology: start at a blank text-editor and Google my way through until I'm done! Of course, having almost 10 years of experience with other programming languages means I usually have a solid idea of *what* to Google when I get stuck. 
 

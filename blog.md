@@ -5,7 +5,7 @@ permalink: /blog/
 description: Browse tutorials and blog posts written by Michael Kafarowski
 ---
 
-# Blog and Tutorials
+# Blog Posts and Tutorials
 
 {% for post in site.posts %}
 <article class="project">

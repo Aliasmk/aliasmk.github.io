@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: Get inspired with Michael Kafarowski's project showcase, featuring the ALIAneS NES Emulator and the HapticEye Clock, and more.
+description: Get inspired by Michael Kafarowski's project showcase, featuring the ALIAneS NES Emulator, the HapticEye Clock, and more.
 permalink: /projects/
 ---
 

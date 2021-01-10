@@ -1,12 +1,12 @@
 ---
 layout: default
 author: michael
-title: Building an Embedded System with a Rich GUI - Tutorial Part 0
+title: Intro to TouchGFX Embedded Graphics
 imgurl: /assets/img/posts/2020-07-30-touchgfx-part-0/icon.jpg
-excerpt: In today's era of HD-capable smartphones, customers expect high quality, visually appealing graphical user interfaces. In this tutorial we'll set up and build a demo application using TouchGFX, a GUI framework for STM32 microcontrollers. This is the first of a series of tutorials covering the TouchGFX framework and the design of an embedded system.
+excerpt: Does your user interface really live up to the expectations of your customer? In today's era of HD-capable smartphones, consumers expect high quality, snappy, visually appealing graphical user interfaces. In this tutorial we'll set up and build a demo application using TouchGFX, a powerful and easy-to-use GUI framework for STM32 microcontrollers.
 description: In this tutorial we'll set up and build a demo application using TouchGFX, a graphics framework for STM32.
 ---
-# Building an Embedded System with a Rich GUI - Tutorial Part 0
+# Building an Embedded System with a Rich GUI - Introduction to TouchGFX
 
 ## Introduction
 
