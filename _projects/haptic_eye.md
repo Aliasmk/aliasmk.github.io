@@ -13,7 +13,7 @@ sitemap: false
 ---
 
 # HapticEye Haptic Clock
-<img src="/assets/img/projects/HapticEyeV3.jpg" class="profilePhoto largepic"/>
+<img src="/assets/img/projects/HapticEyeV3.jpg" alt="{{ page.imgalt }}" class="profilePhoto largepic"/>
 I'm a pretty light sleeper - I wake up pretty often during the night and sometimes have trouble going back to sleep, so I'd like to be able to know what time it is to see whether or not it's worth trying to fall back asleep. To check the time, I have to basically force my eyes open to check my phone, which more often than not is still on full brightness from the previous day.
 
 The goal of the No-Eye Clock project is to provide a mechanism for 'reading' the time without having to look at it.

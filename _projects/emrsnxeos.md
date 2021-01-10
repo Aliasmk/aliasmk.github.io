@@ -12,4 +12,4 @@ btns:
 sitemap: false
 ---
 # EMRSNxEOS Moving Light Controller
-<img src="/assets/img/projects/eosoverview.jpg" class="profilePhoto largepic"/>
+<img src="/assets/img/projects/eosoverview.jpg" alt="{{ page.imgalt }}" class="profilePhoto largepic"/>

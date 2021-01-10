@@ -14,7 +14,7 @@ redirect_from: /projects/pwmcontroller.html
 ---
 
 # LED Strip PWM Controller
-<img src="/assets/img/projects/pwm.jpg" class="profilePhoto verylargepic"/>
+<img src="/assets/img/projects/pwm.jpg" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 
 My father recently bought a 12V white Philips LED Strip. Unfortunately, it was too bright out of the box, so I designed a PWM (Pulse Width Modulation) controller to allow him to dim it to the desired brightness efficiently. This was the first project I had designed a PCB for, which I learned a lot about.
 

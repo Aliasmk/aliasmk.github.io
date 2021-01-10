@@ -12,7 +12,7 @@ btns:
 ---
 
 # Calc.50x.ca Programming Calculator
-<img src="/assets/img/projects/calc50x.jpg" class="profilePhoto verylargepic"/>
+<img src="/assets/img/projects/calc50x.jpg" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 Ever since I began developing my [NES Emulator](/projects/alianes/) back in 2014, I had a favorite online utility to convert between binary, hexadecimal, and decimal. My favorite feature was that you could click on the bits in the binary representation to directly set or clear them. I liked this because it helped me decode offsets and bitmasks for CPU registers. 
 
 On a day just like any other in November 2020, my workflow was broken! My favorite utility was down! It seemed like the domain expired and someone else had bought it out and stuck a wordpress site on it.

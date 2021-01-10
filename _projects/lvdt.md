@@ -14,7 +14,7 @@ redirect_from: /projects/lvdt.html
 ---
 
 # Linear Variable Differential Transformer
-<img src="{{ page.imgurl }}" class="profilePhoto verylargepic"/>
+<img src="{{ page.imgurl }}" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 For my second year statistics class we were instructed to build a sensor or transducer of our choice. My group and I chose a Linear Variable Differential Transformer (LVDT).
 
 ## What is an LVDT?

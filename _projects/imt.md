@@ -14,7 +14,7 @@ redirect_from: /projects/imt.html
 ---
 
 # Java Infinite Monkey Theorem Model
-<img src="{{ page.imgurl }}" class="profilePhoto verylargepic"/>
+<img src="{{ page.imgurl }}" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 This application simulates the Infinite Monkey theory (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding English words.
 
 Originally starting out as a fun side project, I continued to develop this program, making it faster and faster. Currently the limiting factor is not its speed but in fact its memory usage. The speed can be made faster with threading, I would think but the memory usage is a bit more interesting of a problem.

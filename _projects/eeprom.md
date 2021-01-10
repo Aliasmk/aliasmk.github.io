@@ -14,7 +14,7 @@ redirect_from: /projects/eeprom.html
 ---
 
 <h1 class="override_caselock">NO-μCONTROLLER EEPROM READER</h1>
-<img src="/assets/img/projects/eeprom.png" class="profilePhoto verylargepic"/>
+<img src="/assets/img/projects/eeprom.png" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 A few years ago I desoldered a 93C56 EEPROM from something I was salvaging parts from. I decided it would be interesting to test if I could use pushbuttons and LEDs in place of data lines from a microcontroller to read and write to and from the EEPROM.
 
 ## About the 93C56 EEPROM

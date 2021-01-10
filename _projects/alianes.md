@@ -14,7 +14,7 @@ redirect_from: /projects/alianes.html
 ---
 
 <h1 class="override_caselock">ALIAneS NINTENDO ENTERTAINMENT SYSTEM EMULATOR</h1>
-<img src="/assets/img/projects/alianesanimate.gif" class="profilePhoto largepic"/>
+<img src="/assets/img/projects/alianesanimate.gif" alt="{{ page.imgalt }}" class="profilePhoto largepic"/>
 
 The Nintendo Entertainment System (NES) was a video game console first released in 1985. With over 61 million units sold, it held the #1 spot as the best selling video game console for almost 10 years, until it was dethroned by Sony Playstation.
 
