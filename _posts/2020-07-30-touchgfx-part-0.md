@@ -22,7 +22,7 @@ To follow along with this first tutorial, you won't any need any hardware yet. T
 * About 30 minutes
 * A Windows machine (although the framework is not platform dependent, the Designer is Windows-only)
 * An account with STMicroelectronics to download the software ([sign up here](https://www.st.com/content/st_com/en/user-registration.html))
-* TouchGFX Designer ([Download Link](https://my.st.com/content/my_st_com/en/products/development-tools/software-development-tools/stm32-software-development-toolx/stm32-configurators-and-code-generators/touchgfxdesigner.html#get-software))
+* TouchGFX Designer ([Download Link](https://www.st.com/en/development-tools/touchgfxdesigner.html))
 
 Optionally, if you want to build with hardware, you also need:
 
