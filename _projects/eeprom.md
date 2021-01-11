@@ -13,19 +13,19 @@ btns:
 redirect_from: /projects/eeprom.html
 ---
 
-<h1 class="override_caselock">NO-μCONTROLLER EEPROM READER</h1>
+# Reading an EEPROM without a Microcontroller
 <img src="/assets/img/projects/eeprom.png" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 A few years ago I desoldered a 93C56 EEPROM from something I was salvaging parts from. I decided it would be interesting to test if I could use pushbuttons and LEDs in place of data lines from a microcontroller to read and write to and from the EEPROM.
 
 ## About the 93C56 EEPROM
 
-EEPROM stands for Electronically Erasable Programmable Read-Only Memory. As per its name, the contents can be written and erased using electrical pulses. This particular EEPROM has a capacity of 2048 bytes, or approximately 2KB. This is not a lot of memory in the context of the devices we use today. Even the smallest NES games typically ran around 8KB. However, EEPROMs still find use where small volume, persistent storage is required. For example, an EEPROM could be used to store high scores on an arcade machine.
+EEPROM stands for Electronically Erasable Programmable Read-Only Memory. As per its name, the contents can be written and erased using electrical pulses. This particular EEPROM has a capacity of 2048 bytes, or approximately 2KB. This is not a lot of memory in the context of the devices we use today. Even the smallest NES games typically ran around 8KB, and the image on this page is 170KB. However, EEPROMs find wide use where small volume, persistent storage is required. For example, an EEPROM could be used to store high scores on an arcade machine, or the milage on a car.
 
 ## Principle of Operation
 
 The chip has four main pins relating to the operation in my circuit - the Clock pin, the Data In pin, the Data Out pin, and the Chip Select pin.
 
-Integrated circuits are not continuously operating devices - every operation is performed to a beat. Sending pulses to the Clock pin provides this beat. The Data In and Data Out pins take and give out electrical pulses. Finally, the Chip Select pin wakes up the chip and tells it to be ready to work. This is useful because you can connect multiple chips to the same Clock, Data In and Data Out lines, and use the chip select to determine which one is to communicate at any given time. When multiple chips access the same data and clock lines, the lines are commonly called a 'bus'.
+Integrated circuits are not continuously operating devices - every operation is performed to a beat. Sending pulses to the Clock pin provides this beat. The Data In and Data Out pins take and give out electrical pulses. Finally, the Chip Select pin wakes up the chip and tells it to be ready to work. This is useful because you can connect multiple chips to the same Clock, Data In and Data Out lines, and use the chip select to determine which one is to communicate at any given time. When multiple chips access the same data and clock lines at different times, the lines are commonly called a 'bus'.
 
 By sending different combinations of 1s and 0s (bits) to the Data In over multiple clock pulses, you directly access various "commands" of the chip. The first few bits indicates the operation of the chip - commands like 'read', 'write' etc. The next few bits can be used to indicate an address to be accessed or data to be written.
 
