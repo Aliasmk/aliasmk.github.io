@@ -1,7 +1,7 @@
 ---
 layout: default
 title: calc.50x.ca Hex Decimal Binary Converter
-year: 2020
+year: 2020-2021
 imgurl: /assets/img/projects/calc50x.jpg
 imgalt: UI of calc.50x.ca
 desc: My favorite website for converting between hexadecimal, decimal and binary went down in November 2020, so I set out to recreate it from scratch. I used it as an opportunity to learn JavaScript and CSS Grid. Best of all, I got my favorite converter app back for my own use on other projects!
@@ -12,7 +12,7 @@ btns:
 ---
 
 # Calc.50x.ca Programming Calculator
-<img src="/assets/img/projects/calc50x.jpg" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
+<img src="/assets/img/projects/calc50x.png" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
 [calc.50x.ca](https://calc.50x.ca) is a free online utility I developed that converts numbers between Decimal, Hexadecimal, Octal, and Binary in real time. It also features the ability to directly set and clear bits in the binary representation. On the site you can read more about different numbering systems, as well as how to count to 1023 on two hands! 
 
 The project is a replacement for the now-defunct calc.50x.eu - a similar calculator that I had used ever since I started developing my [NES Emulator](/projects/alianes/) in 2014. However, on a day just like any other in November 2020, my workflow was broken! The utility was down! It seemed like the domain expired and someone else had bought it out and stuck a wordpress site on it.
@@ -20,6 +20,8 @@ The project is a replacement for the now-defunct calc.50x.eu - a similar calcula
 For weeks I hoped that someone would make a suitable replacement... until I realized that someone could be **me**! I already had HTML and CSS experience, so all I needed was to learn enough Javascript to implement it. I had never used Javascript for web in any real capacity before, so I used my tried-and true method for learning a new technology: start at a blank text-editor and Google my way through until I'm done! Of course, having almost 10 years of experience with other programming languages means I usually have a solid idea of *what* to Google when I get stuck. 
 
 In addition to Javascript, I also took the opportunity to modernize my CSS skills by learning and using CSS Grid in the layout, as well as adopting a "mobile-first" design workflow for the first time.
+
+In November 2021 (almost a year later), I spruced up the appearance and added support for code-like formatting, uppercase hexadecimal, and 32-bit numbers.
 
 ## Styling and Search Engine Optimization (SEO)
 The CSS for the site was developed "mobile-first". This means that the site was first designed for small screens. As the screen size is increased CSS rule tweaks are made to make better use of the available room. Designing mobile-first is unintuitive at first - after all, web development is primarily performed on a desktop or laptop computer with a larger screen. However, mobile now accounts for over half of the world's web traffic. The Google indexer simulates a mobile device when it crawls the web and determines page quality and search rank, which makes having an excellent mobile site a requirement for search engine optimization (SEO). Finally, there are arguments that mobile-first forces designers to optimize their websites primarily for content, due limited screen real-estate. "Content is key" is an expression that is commonly used in SEO circles that relates to this concept. 
@@ -32,6 +34,9 @@ The code is about 200 lines long. Two event handlers are used for input handling
 Each time the ```input``` event fires, the code reads the new value from the input box that previously triggered the ```focus``` event (it's assumed that the input box must be focused before it can be edited). The new value may contain any number of new characters anywhere in the string, such as if the user pasted in the middle of the text. For this reason, the entire string is searched. Any time an invalid character is detected, it is stripped from the string. An invalid character is any character that is not represented by the radix (number base) corresponding to the input box. For example, the character 'A' would validate in hexadecimal but not decimal, octal or binary. Once the string is fully cleared, the resulting number is converted into all the other bases and the input boxes corresponding to the bases are set.
 
 The "bit twiddle" section allows the user to directly set and clear bits in real time. Whenever a bit is clicked, a ```click``` event fires, which calculates the new number using bitwise operations on the number previously represented, and updates the fields accordingly.
+
+## Code-Like Formatting
+In C/C++ code, numbers with bases other than 10 are represented in particular ways. Hexadecimal numbers have ```0x``` at the front, for example ```0x1234ABCD```. Octal has a ```0``` at the front, like ```0234``` (differentiating it from ```234``` in decimal). Some compilers support binary literals that begin with ```0b```, and look like ```0b11010110```. I added an option to the calculator have the numbers automatically format themselves in these ways (as well as accept pastes of numbers formatted such, like directly from source code). This was implemented by detecting and stripping away the leading characters before running the input through the validation routine described earlier. After the numeric input is validated, the leading characters are added back to the final output. 
 
 ## Challenges
 I ran into some troubles with input validation, especially when testing on mobile devices. My original strategy was to validate each new character as it was typed. I set up a ```keypress``` event that would capture the keycode, convert the keycode to its corresponding character, then convert that character to a number and check for NaN in the radix (number base) corresponding whatever field the user was editing. If a value was validated, it would allow the ```keypress``` event through, otherwise its propagation would be blocked, effectively discarding it.
