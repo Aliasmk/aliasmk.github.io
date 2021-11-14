@@ -21,7 +21,7 @@ For weeks I hoped that someone would make a suitable replacement... until I real
 
 In addition to Javascript, I also took the opportunity to modernize my CSS skills by learning and using CSS Grid in the layout, as well as adopting a "mobile-first" design workflow for the first time.
 
-In November 2021 (almost a year later), I spruced up the appearance and added support for bit shifting, code-like formatting, uppercase hexadecimal, and 32-bit numbers.
+In November 2021 (almost a year later), I spruced up the visuals and added support for bit shifting, code-like formatting, uppercase hexadecimal, 32-bit numbers, local storage of settings, and dark mode 😎.
 
 ## Styling and Search Engine Optimization (SEO)
 The CSS for the site was developed "mobile-first". This means that the site was first designed for small screens. As the screen size is increased CSS rule tweaks are made to make better use of the available room. Designing mobile-first is unintuitive at first - after all, web development is primarily performed on a desktop or laptop computer with a larger screen. However, mobile now accounts for over half of the world's web traffic. The Google indexer simulates a mobile device when it crawls the web and determines page quality and search rank, which makes having an excellent mobile site a requirement for search engine optimization (SEO). Finally, there are arguments that mobile-first forces designers to optimize their websites primarily for content, due limited screen real-estate. "Content is key" is an expression that is commonly used in SEO circles that relates to this concept. 
