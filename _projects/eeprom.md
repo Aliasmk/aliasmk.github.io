@@ -5,7 +5,7 @@ year: 2016
 imgurl: /assets/img/projects/eeprom.png
 imgalt: Circuit on a breadboard
 active: true
-desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. Even though it is not a practical way of using these ICs, it is good educational "slow motion" look at the signals.
+desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. By replacing digital signals with buttons and LEDs, a user can visualize how a microcontroller behaves when interacting with such devices. Even though it is not a practical way of using an EEPROM, it is good educational "slow motion" look at the process.
 description: Learn more about the electrical signals that take place when reading an EEPROM
 btns: 
 - {text: Learn More..., link: "/projects/eeprom/", active: true}

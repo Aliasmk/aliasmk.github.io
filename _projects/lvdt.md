@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Linear Variable Differential Transformer
-year: 2015
+year: 2015 | University of Waterloo
 imgurl: /assets/img/projects/lvdt.jpg
 imgalt: LVDT measuring a gauge block
 active: true
-desc: An experiment in alternative techniques over the use of microcontrollers to interface with memory integrated circuits over the SPI protocol. Even though it is not a practical way of using these ICs, it is good educational "slow motion" look at the signals.
+desc: Based on the principles of electromagnetic coupling, LVDTs are capable of extremely high precision measurements. In a team of four we built one from scratch using scrap parts and various electronics components, including discrete op-amps as a signal amplifier and an Arduino for analog-to-digital conversion and display.
 description: Learn more about the home-made LVDT built in part by Michael Kafarowski
 btns: 
 - {text: Learn More..., link: "/projects/lvdt/", active: true}

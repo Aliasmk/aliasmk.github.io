@@ -5,7 +5,7 @@ description: Get inspired by Michael Kafarowski's project showcase, featuring th
 permalink: /projects/
 ---
 
-# Personal and Academic Projects
+# Personal, Academic, and Professional Projects
 
 
 {% for item in site.data.projectorder %}
