@@ -273,6 +273,6 @@ Now when you press the key combination, your project will save, build and run th
 
 Unit testing on your native development machine is a great way to improve your embedded system development. It promotes modular code design, it is faster than target compilation, flashing and debugging, and it allows you to perform repeatable tests. In this article we explored how to set up the STM32CubeIDE to easily run unit tests against loosely-coupled STM32 project code. 
 
-Thank you for reading. I hope you found this article useful! I'd love to hear your thoughts or questions about this article - you can reach me on twitter at @mkafarowski or on linkedin at [https://www.linkedin.com/in/mkafarowski/](https://www.linkedin.com/in/mkafarowski/)
+Thank you for reading. I hope you found this article useful! I'd love to hear your thoughts or questions about this article - you can reach me on social using the links in the footer below.
 
 Happy testing!
