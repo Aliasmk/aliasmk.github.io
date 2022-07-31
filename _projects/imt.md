@@ -32,15 +32,16 @@ Below is an example output of the program scanning 3.9 million possible words ra
 
 For this particular run, the results are shown below:
 
-<div class="codesnippet">                  
-<code>Scanned a total of 3872398 possible words, 21524 of these were real. (0.56%)
+{% highlight plaintext %}
+Scanned a total of 3872398 possible words, 21524 of these were real. (0.56%)
 Percentage of word lengths as follows:
 2 letters: 17510 (81.35%)
 3 letters: 3716 (17.26%)
 4 letters: 281 (1.31%)
 5 letters: 16 (0.07%)
 6 letters: 1 (0%)
-7 letters: 0 (0%)</code></div>
+7 letters: 0 (0%)
+{% endhighlight %}
 
 Please note: this program does not simulate any physical interaction that normal monkeys may have with a typewriter.
 {% include imgwcaption.html 

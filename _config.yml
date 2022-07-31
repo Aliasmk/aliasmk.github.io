@@ -3,6 +3,8 @@ baseurl: "/"
 
 layout: default
 title: "Michael Kafarowski"
+markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

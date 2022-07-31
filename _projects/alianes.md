@@ -40,9 +40,9 @@ I learned a significant amount about the technical details of emulation, the NES
 
 ALIAneS can be cloned from my Github. It currently builds on Ubuntu – some modification to the makefile might be required to build on macOS and Windows.
 
-<div class="codesnippet">                  
-<code>git clone https://github.com/Aliasmk/ALIAneS-Emulator.git</code>         
-</div>
+{% highlight plaintext %}
+git clone https://github.com/Aliasmk/ALIAneS-Emulator.git        
+{% endhighlight %}
 
 If you would rather watch it in action, the video below shows ALIAneS running Donkey Kong.
 

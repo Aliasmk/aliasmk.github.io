@@ -94,7 +94,7 @@ body {
   min-width: 0;
 }
 
-h1, h2, p, .project {
+h1, h2, h3, p, .project {
   padding: 0 1.5rem;
 }
 
@@ -122,7 +122,7 @@ p {
 }
 
 li {
-  margin-left:1em;
+  margin:1em;
 }
 
 .profilePhoto {
@@ -145,10 +145,11 @@ li {
   width:25em;
 }
 
-figure {
+.image_figure {
   margin: 1em;
   text-align: center;
 }
+
 
 img{
   max-width:100%;
@@ -160,15 +161,33 @@ figcaption {
   font-style:italic;
 }
 
-code {
-  font-size: 1.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  color: rgb(50, 50, 50); 
-  background: rgb(240, 238, 236);
-  display:inline-block;
+.highlighter-rouge {
+  background-color: #f4f4f4;
+  border: 1px solid #C1C1C1;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+  white-space: nowrap;
 }
 
+.highlight pre {
+  padding: 0.5em 1em;
+  overflow:auto;
+
+  border-radius: 3px;
+  border: 1px solid #C1C1C1;
+  background-color: #f4f4f4;
+}
+
+.rouge-table pre {
+  border:0px none black;
+  margin: 0;
+}
+
+.rouge-table .gutter {
+  border-right: 1px solid #C1C1C1;
+}
+
+/*
 .codesnippet {
   display:block;
   margin: 1em 2em;
@@ -181,6 +200,7 @@ code {
   white-space: pre;
   padding: 1em;
 }
+*/
 
 
 .project {
@@ -213,7 +233,7 @@ code {
       grid-area: pimg;
       padding-top: 0.5em;
       max-width: 20em;
-      max-height: 20em;
+      max-height: 15em;
   }
 
   .project .project-desc{
