@@ -35,13 +35,13 @@ The final benefit - it's **fun**. It's extremely satisfying to design code that 
 
 ## Guide To Setting Up Native Unit Testing With STM32CubeIDE
 
-This guide assumes you are working on Windows, and have STM32CubeIDE installed. If not, you can download it from ST's website at [https://www.st.com/en/development-tools/stm32cubeide.html](https://www.st.com/en/development-tools/stm32cubeide.html). Although optional, [Git for Windows](https://git-scm.com/download/win) should be installed if you wish to clone or submodule the GoogleTest repository rather than downloading the zip from GitHub.
+This guide assumes you are working on Windows, and have STM32CubeIDE installed. If not, you can download it from ST's website at [https://www.st.com/en/development-tools/stm32cubeide.html](https://www.st.com/en/development-tools/stm32cubeide.html){:target="_blank"}. Although optional, [Git for Windows](https://git-scm.com/download/win){:target="_blank"} should be installed if you wish to clone or submodule the GoogleTest repository rather than downloading the zip from GitHub.
 
 ### Setting Up The Local Compiler
 
 The easiest way to add a local unit testing configuration to an STM32 project is to create a separate local C/C++ project and use it as a template when creating a build configuration in the STM32 project. We'll need a native C/C++ compiler installed. If you already have a *POSIX compatible* native C/C++ development environment installed, you can skip this section.
 
-Download MSYS2 from [https://www.msys2.org/](https://www.msys2.org/). MSYS2 is a fork of Cygwin, and is used specifically over MinGW because it has a POSIX-compatible environment. This is important because GoogleTest uses the POSIX threading model, and won't compile properly with a standard installation of MinGW.
+Download MSYS2 from [https://www.msys2.org/](https://www.msys2.org/){:target="_blank"}. MSYS2 is a fork of Cygwin, and is used specifically over MinGW because it has a POSIX-compatible environment. This is important because GoogleTest uses the POSIX threading model, and won't compile properly with a standard installation of MinGW.
 
 Install MSYS2, and run the MSYS2 shell (if it doesn't open after installation, you can find it by searching "MSYS2 MSYS" in the Start Menu). Run `pacman -Syu` , which will start the first of two stages required to bring the package manager up to date. Allow the package manager to install the packages. Between stages, the terminal window will prompt you to close and manually reopen the terminal by clicking on the MSYS2 MSYS start menu or desktop icon. Complete the setup by running `pacman -Syu` again and accepting the package download when prompted.
 
@@ -94,7 +94,7 @@ We are now ready to use this project as a template to build local C++ unit tests
 
 Create or import an STM32 Project you would like to write unit tests for. In the filesystem root (in Explorer, not STM32CubeIDE), create two folders - one called Common and another called Testing. The Common folder is where your unit testable (i.e. modular, loose-coupled, and cross platform) code will live, and the Testing folder is where the GoogleTest code and your unit tests will live. In STM32CubeIDE refresh the project so that the new folders appear - if they still don't appear after a refresh, you may have to drag them from explorer into the project hierarchy and link them manually.
 
-We'll now install GoogleTest from [its GitHub repository](https://github.com/google/googletest). There are a few ways we can do this:
+We'll now install GoogleTest from [its GitHub repository](https://github.com/google/googletest){:target="_blank"}. There are a few ways we can do this:
 
 - Download the zip file and extract it into the Testing folder (rename the googletest-main folder to googletest for consistency in the rest of the article)
 - If you have git, clone the repository by running `cd <your project dir>/Testing` in a terminal and then `git clone https://github.com/google/googletest.git`.
@@ -225,9 +225,9 @@ As you begin writing loosely coupled and unit-tested code, place the source and 
 
 I might make a future article that covers how I write loosely coupled, modular code that works great with unit testing. For now, I recommend the following resources:
 
-- [Test Driven Development for Embedded Systems by James Grenning](https://pragprog.com/titles/jgade/test-driven-development-for-embedded-c/)
-- [Embedded Artistry: Musings on Tight Coupling Between Firmware and Hardware](https://embeddedartistry.com/blog/2018/08/06/musings-on-tight-coupling-between-firmware-and-hardware/)
-- [GoogleTest Primer](https://google.github.io/googletest/primer.html)
+- [Test Driven Development for Embedded Systems by James Grenning](https://pragprog.com/titles/jgade/test-driven-development-for-embedded-c/){:target="_blank"}
+- [Embedded Artistry: Musings on Tight Coupling Between Firmware and Hardware](https://embeddedartistry.com/blog/2018/08/06/musings-on-tight-coupling-between-firmware-and-hardware/){:target="_blank"}
+- [GoogleTest Primer](https://google.github.io/googletest/primer.html){:target="_blank"}
 
 ## Fun Extras!
 
