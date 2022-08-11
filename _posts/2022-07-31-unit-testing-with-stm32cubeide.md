@@ -103,7 +103,7 @@ imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/IncludeTab.p
 In the Libraries tab, add entries for `gtest` and `gmock`.
 
 {% include imgwcaption.html 
-imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/LibraryTab.png" 
+imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/LibraryTab2.png" 
 %}
 
 In the Source Location tab, remove the (STM32ProjectName)/src filter, and add a filter for the `Common` and `Testing` folders.
