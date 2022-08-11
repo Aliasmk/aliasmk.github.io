@@ -16,7 +16,7 @@ In this tutorial we'll learn about how to make native unit testing easy for your
 
 - Learn the benefits of native machine unit testing for embedded systems
 - Install a native C/C++ compiler on your development machine
-- Download and integrate the GoogleTest framework into your project structure
+- Download and integrate the GoogleTest library
 - Add a build configuration to execute unit tests on loosely coupled code in your STM32 project
 - Build and run our first unit tests
 - Learn to enhance your testing experience with plugins and keyboard shortcuts.
@@ -35,25 +35,21 @@ The final benefit - it's **fun**. It's extremely satisfying to design code that 
 
 ## Guide To Setting Up Native Unit Testing With STM32CubeIDE
 
-This guide assumes you are working on Windows, and have STM32CubeIDE installed. If not, you can download it from ST's website at [https://www.st.com/en/development-tools/stm32cubeide.html](https://www.st.com/en/development-tools/stm32cubeide.html){:target="_blank"}. Although optional, [Git for Windows](https://git-scm.com/download/win){:target="_blank"} should be installed if you wish to clone or submodule the GoogleTest repository rather than downloading the zip from GitHub.
+This guide assumes you are working on Windows, and have STM32CubeIDE installed. If not, you can download it from ST's website at [https://www.st.com/en/development-tools/stm32cubeide.html](https://www.st.com/en/development-tools/stm32cubeide.html).
 
 ### Setting Up The Local Compiler
 
-The easiest way to add a local unit testing configuration to an STM32 project is to create a separate local C/C++ project and use it as a template when creating a build configuration in the STM32 project. We'll need a native C/C++ compiler installed. If you already have a *POSIX compatible* native C/C++ development environment installed, you can skip this section.
+The easiest way to add a local unit testing configuration to an STM32 project is to create a native C/C++ project and use it as a template to create a build configuration in the STM32 project. We will use MSYS2's package manager to download and install the MinGW64 C/C++ toolchain and GoogleTest libraries. If you already have a native C/C++ development environment installed, you can skip this section and download the GoogleTest library manually from your native toolchain's repository.
 
-Download MSYS2 from [https://www.msys2.org/](https://www.msys2.org/){:target="_blank"}. MSYS2 is a fork of Cygwin, and is used specifically over MinGW because it has a POSIX-compatible environment. This is important because GoogleTest uses the POSIX threading model, and won't compile properly with a standard installation of MinGW.
+Download and install MSYS2 from [https://www.msys2.org/](https://www.msys2.org/). When installed run the MSYS2 shell (if it doesn't open after installation, you can find it by searching "MSYS2 MSYS" in the Start Menu). Run the command `pacman -Syu` , which will start the first of two stages required to bring the package manager up to date. Allow the package manager to install the packages. Between stages, the terminal window will prompt you to close and manually reopen the terminal by clicking on the MSYS2 MSYS start menu or desktop icon. Complete the setup by running `pacman -Syu` a second time and accepting the package download when prompted.
 
-Install MSYS2, and run the MSYS2 shell (if it doesn't open after installation, you can find it by searching "MSYS2 MSYS" in the Start Menu). Run `pacman -Syu` , which will start the first of two stages required to bring the package manager up to date. Allow the package manager to install the packages. Between stages, the terminal window will prompt you to close and manually reopen the terminal by clicking on the MSYS2 MSYS start menu or desktop icon. Complete the setup by running `pacman -Syu` again and accepting the package download when prompted.
-
-Once MSYS2 is fully updated, you can begin installing the required development packages. Run `pacman -S base-devel gcc gdb` to install basic unix-like commands, the gcc compiler, and the gdb debugger. Other packages and libraries you want can be installed later and will be made automatically available to the compiler.
-
-Assuming you used the default installation path from the MSYS2 installer, add `C:\msys64\usr\bin` to your PATH. Do this by searching for "environment variable" in the Start Menu, clicking the entry that says "Edit The System Environment Variables", and then in the dialog click Environment Variables. Click New or Browse, add the path, and click OK out of all windows. 
+Once MSYS2 is fully updated, you can begin installing the required development packages. Run `pacman -S base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-gtest` to install basic unix-like commands, the MinGW compiler and the GoogleTest libraries. Other packages and libraries you want can be installed later and will be made automatically available to the compiler.
 
 ### Creating the Donor Project
 
 Open STM32CubeIDE into a new or existing workspace.
 
-From File→New→C/C++ Project, create a new C++ Managed Build project. On the next page, name it TestTemplate, select the Hello World C++ project type and use the Cygwin GCC toolchain. The hello world project will let us make sure that our compiler is working, and the Cygwin GCC toolchain is actually the one we just installed with MSYS2 (MSYS2 is a fork of Cygwin).
+From File→New→C/C++ Project, create a new C++ Managed Build project. On the next page, name it TestTemplate, select the Hello World C++ project type and use the MinGW GCC toolchain. The hello world project will let us make sure that our compiler is working;
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/ProjectCreateB.png" 
@@ -63,24 +59,16 @@ Once created, verify that the project builds properly by right clicking the proj
 
 {% highlight plaintext %}
 {% raw %}
-23:11:29 **** Build of configuration Debug for project TestTemplate ****
-make all 
-Building file: ../src/TestTemplate.cpp
-Invoking: Cygwin C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestTemplate.d" -MT"src/TestTemplate.o" -o "src/TestTemplate.o" "../src/TestTemplate.cpp"
-Finished building: ../src/TestTemplate.cpp
- 
-Building target: TestTemplate.exe
-Invoking: Cygwin C++ Linker
-g++  -o "TestTemplate.exe" ./src/TestTemplate.o   
-Finished building target: TestTemplate.exe
- 
+21:07:39 **** Rebuild of configuration Debug for project TestTemplate ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TestTemplate.o" "..\\src\\TestTemplate.cpp" 
+g++ -o TestTemplate.exe "src\\TestTemplate.o" 
 
-23:11:30 Build Finished. 0 errors, 0 warnings. (took 1s.302ms)
+21:07:41 Build Finished. 0 errors, 0 warnings. (took 1s.647ms)
 {% endraw %}
 {% endhighlight %}
 
-Finally, right click the project again and click Run As → Local C++ project.
+Finally, click the dropdown next to the run icon in the menu bar and click the local C++ executable option.
 
 {% highlight plaintext %}
 {% raw %}
@@ -92,15 +80,9 @@ We are now ready to use this project as a template to build local C++ unit tests
 
 ### Integrating the Test Configuration From the Donor Project
 
-Create or import an STM32 Project you would like to write unit tests for. In the filesystem root (in Explorer, not STM32CubeIDE), create two folders - one called Common and another called Testing. The Common folder is where your unit testable (i.e. modular, loose-coupled, and cross platform) code will live, and the Testing folder is where the GoogleTest code and your unit tests will live. In STM32CubeIDE refresh the project so that the new folders appear - if they still don't appear after a refresh, you may have to drag them from explorer into the project hierarchy and link them manually.
+Create or import an STM32 Project you would like to write unit tests for. In the filesystem root (in Explorer, not STM32CubeIDE), create two folders - one called Common and another called Testing. The Common folder is for unit testable (i.e. modular, loose-coupled, and cross platform) code and the Testing folder for the unit tests, doubles and mock objects. In STM32CubeIDE refresh the project so that the new folders appear - if they still don't appear after a refresh, you may have to drag them from explorer into the project hierarchy and link them manually (this is the case with most TouchGFX application template projects).
 
-We'll now install GoogleTest from [its GitHub repository](https://github.com/google/googletest){:target="_blank"}. There are a few ways we can do this:
-
-- Download the zip file and extract it into the Testing folder (rename the googletest-main folder to googletest for consistency in the rest of the article)
-- If you have git, clone the repository by running `cd <your project dir>/Testing` in a terminal and then `git clone https://github.com/google/googletest.git`.
-- Create a git submodule by running `cd <your project dir>/Testing` in a terminal and then `git submodule add https://github.com/google/googletest.git`. This is useful when your project is already tracked with Git because you can keep GoogleTest updated easily without large changes in your project repository.
-
-Back in STM32CubeIDE, double check that the STM32 project and the TestTemplate project **are both in the same workspace**. Then right click the STM32 project in the Project Explorer and then click Build Configurations → Manage... → New. 
+Double check that the STM32 project and the TestTemplate project **are both in the same workspace**. Right click the STM32 project in the Project Explorer and then click Build Configurations → Manage... → New. 
 
 Create a new configuration with the name UnitTest, and in the "Copy settings from" section, select "Import from projects" then select the **debug** configuration of the TestTemplate project (this way  the unit tests will have maximum debugging and no optimizations by default). 
 
@@ -108,36 +90,29 @@ Create a new configuration with the name UnitTest, and in the "Copy settings fro
 imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/NewConfiguration.png" 
 %}
 
-Click OK. Back in the Manage Configurations Window, select the new UnitTest configuration and click Set Active.
+Click OK. Back in the Manage Configurations Window, select the new UnitTest configuration and click Set Active, then click OK.
 
 ### Setting Up The Unit Test Configuration
 
-Right click the STM32 project and click Properties, then in the sidebar select C/C++ General → Paths and Symbols. Ensure that the UnitTests configuration is selected at the top of the dialog box. In the Includes tab, click Add, and then add the following include paths to all languages (but not all configurations).
-
-{% highlight plaintext %}
-{% raw %}
-Common
-Testing
-Testing/googletest/googletest
-Testing/googletest/googletest/include
-Testing/googletest/googlemock
-Testing/googletest/googlemock/include
-{% endraw %}
-{% endhighlight %}
+Right click the STM32 project and click Properties, then in the sidebar select C/C++ General → Paths and Symbols. Ensure that the UnitTests configuration is selected at the top of the dialog box. In the Includes tab, click Add, and then add include paths for `Common` (apply to all languages and all configurations) and `Testing` (apply to all languages only).
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/IncludeTab.png" 
 %}
 
-In the Source Location tab, remove the <STM32ProjectName>/src filter, and add a filter for Common, Testing/tests/, Testing/googletest/googletest/src, and Testing/googletest/googlemock/src. 
+In the Libraries tab, add entries for `gtest` and `gmock`.
+
+{% include imgwcaption.html 
+imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/LibraryTab.png" 
+%}
+
+In the Source Location tab, remove the (STM32ProjectName)/src filter, and add a filter for the `Common` and `Testing` folders.
 
 {% include imgwcaption.html 
 imgurl="/assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/SourceFilter.png" 
 %}
 
 Click OK to close the windows. 
-
-In the Project Explorer, expand the source filters for googletest and googlemock, and select all the files except for any .h files, gmock-all.cc, and gtest-all.cc. Right-click them, select Resource Configuration→Exclude From Build. In the dialog, check the box to exclude the files from each configuration, and then click OK.
 
 ### Building And Running Tests
 
@@ -154,11 +129,11 @@ public:
 {% endraw %}
 {% endhighlight %}
 
-In the Testings/tests/ folder create a file called test_main.cpp, and copy the code below. The main method sets up the GoogleTest framework, and runs a trivial passing and failing test.
+In the Testings/ folder create a file called test_main.cpp, and copy the code below. The main method sets up the GoogleTest framework, and runs a trivial passing and failing test.
 
 {% highlight cpp linenos %}
 {% raw %}
-/* Testing/tests/test_main.cpp */
+/* Testing/test_main.cpp */
 #include "gtest/gtest.h"
 #include "TrivialClass.hpp"
 
@@ -215,11 +190,17 @@ Expected: true
 {% endraw %}
 {% endhighlight %}
 
-Because we deliberately wrote a failing test, this is the output we expect. Congratulations, you're ready to begin unit testing or test driving your code right in STM32CubeIDE!
+Because we deliberately wrote a passing test and a failing test, this is the output we expect. 
+
+If you'd like, you can try running the program using the debugger by clicking the dropdown beside the debugger icon in the menu bar and selecting the UnitTest executable.
+
+Congratulations, you're ready to begin unit testing or test driving your code right in STM32CubeIDE!
 
 ### Cleaning Up and Next Steps
 
-The last thing we need to do is ensure that we include our Common folder and exclude our testing directory when we are building for the STM32 target. Switch back to the Debug configuration, then open the project properties and navigate to C/C++ General → Paths and Sources. Verify that the Testing directory isn't on the list, but that Common, Drivers, Middleware, and any other target-specific folders are on the list. In the Includes tab add the Common folder. Repeat the same for the Release configuration. 
+The last thing we need to do is ensure that we include our Common folder and exclude our testing directory when we are building for the STM32 target. Switch back to the Debug configuration, then open the project properties and navigate to C/C++ General → Paths and Sources. Select the Debug configuration. In the Source Filter tab, verify that the `Testing` directory isn't on the list, but that `Common`, `Drivers`, `Middleware`, and any other target-specific folders are. In the Includes tab make sure that the `Common` folder is appended to the end of the existing list, but that `Testing` is not. Finally, the `gtest` and `gmock` entries should not be in the Libraries tab. Repeat these instructions for the Release configuration.
+
+You can remove or close the TestTemplate project at any time if you wish.
 
 As you begin writing loosely coupled and unit-tested code, place the source and header files in the Common folder where it is accessible to, and compiles nicely for both the unit tests and the target system. 
 
