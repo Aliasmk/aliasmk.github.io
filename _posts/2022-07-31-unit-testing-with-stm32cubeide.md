@@ -1,18 +1,18 @@
 ---
 layout: default
 author: michael
-title: How to Set Up Unit Testing Directly In STM32CubeIDE
+title: Unit Testing Your Embedded Code Directly In STM32CubeIDE
 imgurl: /assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/title.png
 imgalt: Icon for Unit Testing With STM32CubeIDE Article
-excerpt: Unit testing is a powerful tool for improving the speed and quality of embedded system development, but it's not always easy to integrate into your workflow. By the end of this tutorial, you will be able to start writing unit tests directly in STM32CubeIDE that will compile and execute against your STM32 project code natively on your development machine.
-description: In this tutorial we'll learn about how to make native unit testing easy for your STM32 projects.
+excerpt: Unit testing is a powerful tool for improving the speed and quality of your embedded system development process, but it can be tricky to integrate into your workflow. By the end of this tutorial, you will be able to start writing unit tests directly in STM32CubeIDE that will compile and execute against your embedded code natively on your development machine.
+description: In this tutorial we'll learn about how to make native unit testing easy for your embedded STM32 projects.
 ---
 
-# How to Set Up Unit Testing Directly In STM32CubeIDE
+# Unit Testing Your Embedded Code Directly In STM32CubeIDE
 
 ## Introduction
 
-In this tutorial we'll learn about how to make native unit testing easy for your STM32 projects. We'll start with a default installation of STM32CubeIDE - ST's Cube-flavored distribution of Eclipse, and by the end of this article, you can begin writing unit tests or performing Test Driven Development on your STM32 project code directly in STM32CubeIDE. In less than an hour, we will:
+In this tutorial we'll learn about how to make native unit testing easy for your embedded STM32 projects. We'll start with a default installation of STM32CubeIDE - ST's Cube-flavored distribution of Eclipse, and by the end of this article, you can begin writing unit tests or performing Test Driven Development on your STM32 project code directly in STM32CubeIDE. In less than an hour, we will:
 
 - Learn the benefits of native machine unit testing for embedded systems
 - Install a native C/C++ compiler on your development machine
