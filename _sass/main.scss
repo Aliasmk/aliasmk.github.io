@@ -11,11 +11,18 @@ html, body {
 body {
   margin: 0;
   display: grid;
-  grid-template-rows: [header] auto [main]1fr [footer]auto;
+  grid-template-rows: [notice] [header] auto [main]1fr [footer]auto;
   grid-template-columns: 100%;
   
   font-family: 'Open Sans', sans-serif;
   color: rgb(18, 20, 26);
+}
+
+#notice {
+  grid-row: notice;
+  background-color: #830707;
+  color: white;
+  text-align: center
 }
 
 #header{
