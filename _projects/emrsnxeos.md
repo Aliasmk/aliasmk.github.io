@@ -32,7 +32,7 @@ For all their benefits, lighting consoles are bulky and very expensive. Smaller 
 My sister [Emerson](https://ekafarowski.com) is a professional lighting designer, and we wanted to work together to solve this problem. Our solution was to package the most important features from a standard lighting console into a customizable, portable and low-cost device that maintains compatibility with industry-standard software.
 
 {% include imgwcaption.html 
-imgurl="/assets/img/projects/emrsnxeos/concept.png" 
+imgurl="/assets/img/projects/emrsnxeos/concept.jpg" 
 caption="The EMRSNxEOS Concept, showing the Command Keyboard, the Moving Light Controller, and a set of encoders and sliders." 
 alttext="A 3D rendering of an enclosure containing a mechanical keyboard, a device with a screen, and a few knobs and sliders."%}
 
@@ -42,7 +42,7 @@ Commercial lighting consoles have dozens of keys which perform different functio
 EMRSNxEOS features a custom mechanical keyboard, with keys mapped to software functions instead of regular QWERTY characters. The keyboard circuit is a [off-the-shelf JJ40](https://www.aliexpress.com/item/32828781103.html) ortholinear keyboard. The original keyboard firmware had limited ability to map buttons to key combinations, so we upgraded to [QMK firmware](https://github.com/qmk/qmk_firmware). QMK features an easy-to-use web-based configurator, where the actions of each key can be assigned to arbitrary letters, numbers or key combinations. Emerson customized it for her particular use case but the configurator makes it easy for any lighting designer to customize which key combinations they want and where on the keyboard they should be located.
 
 {% include imgwcaption.html 
-imgurl="/assets/img/projects/emrsnxeos/keymap.jpg" 
+imgurl="/assets/img/projects/emrsnxeos/keymap2.jpg" 
 caption="The final keymap in the QMK configurator. EOS users may recognize some hotkeys!" 
 alttext="A keyboard visualization with an overlay of various hotkeys."%}
 
@@ -75,7 +75,7 @@ Finally, the ability of the ESP32 to create a Wi-Fi access point is handy for ne
 ETC, creators of the popular theater lighting software EOS launched an initiative called #Lighthack, an educational kit that encouraged creatives and makers to design their own lighting control interfaces using the OSC protocol. The sample project could control and display some preset parameters of a light using an alphanumeric LCD, a few buttons and some rotary encoders. The Lighthack code served as a launching point for a custom breadboard project with a few buttons and an encoder, running on an Arduino Mega. 
 
 {% include imgwcaption.html 
-imgurl="/assets/img/projects/emrsnxeos/proto_1.png" 
+imgurl="/assets/img/projects/emrsnxeos/proto_1.jpg" 
 caption="Proof of concept, where the encoder and buttons could adjust some lighting controls and display information on the OLED" 
 alttext="An electronics prototyping breadboard with multiple buttons, an encoder, and a screen showing lighting information."%}
 
