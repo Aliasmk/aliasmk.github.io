@@ -100,7 +100,7 @@ alttext="Left: a magnified image of an upside down integrated circuit with tiny 
 
 The first PCB revision was largely unusable, but I learned a lot from it that I applied and corrected in the second revision. The second revision worked great and had a few improvements, such as headers for easier connection and disconnection of the encoders and sliders. With more free pins, I could eliminate the ATMega and directly connect all the rotary encoders to the ESP32.
 
-## Results and Next Steps
+## Final Results and Next Steps
 We finished 80% of the project in time for the DME Creators Grant showcase, with only the fader wing (sliders) and the enclosure design still outstanding. Emerson created the demo video below, which highlights the main features of the console as well as brief notes about its development. 
 
 <div style="text-align:center">
