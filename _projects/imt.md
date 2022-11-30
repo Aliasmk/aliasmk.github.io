@@ -15,9 +15,9 @@ redirect_from: /projects/imt.html
 
 # Java Infinite Monkey Theorem Model
 <img src="{{ page.imgurl }}" alt="{{ page.imgalt }}" class="profilePhoto verylargepic"/>
-This application is a model of the Infinite Monkey Theorem (which states that a monkey, typing into infinity will eventually type a well known piece of literature) by creating sentence-like gibberish and finding English words within.
+This application is a model of the Infinite Monkey Theorem (which states that a monkey, typing into infinity will eventually type a well-known piece of literature) by creating sentence-like gibberish and finding English words within.
 
-The application is written in Java as a command line program. I originally wrote it when I was new to program. As I learned more, I continued to develop this program, making it faster and faster.
+The application is written in Java as a command line program. I originally wrote it when I beginning to learn how to program. As I learned more, I continued to develop this program, making it faster and faster.
 
 ## Example of Operation
 

@@ -8,7 +8,7 @@ description: Explore projects, tutorials and blog posts by Michael Kafarowski, a
 <img class="profilePhoto imgwborder" src="/assets/img/site/me.jpg" alt="me">
 Hi! I'm Michael Kafarowski. I have a passion for exploring new skills and ideas. I love taking things apart, learning how things work, and building and sharing new things. I strive to always improve and expand upon my technical, non-technical and interpersonal skills.
 
-I work as an embedded electronics and software designer at a laser solutions company based in Ontario. My day usually consists of testing new prototypes, writing embedded C++ for our STM32 systems, or designing 3D models or PCBs for new prototypes.
+I work as an embedded electronics and software designer at World Star Tech, a laser solutions company in Markham, Ontario. My day usually consists of testing new prototypes, writing embedded C++ for our STM32 systems, or designing 3D models or PCBs for new prototypes.
 
 In 2019, I graduated from the Mechatronics Engineering program at the University of Waterloo. I had the pleasure of interning at Metrolinx, Toronto Transit Commission, Agfa-Gevaert Graphics and Metalumen Manufacturing.
 
