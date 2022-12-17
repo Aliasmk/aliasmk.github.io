@@ -4,9 +4,9 @@ author: michael
 title: Version Control for KiCAD PCB Projects
 imgroot: /assets/img/posts/2022-12-16-version-control-for-pcb-design/
 imgurl: /assets/img/posts/2022-12-16-version-control-for-pcb-design/icon.png
-imgalt: 
-excerpt: Version control is a common tool used in the software development world that tracks file revisions and enables effective developer collaboration. Although the visual nature of PCB and schematic designs presents a barrier to using version control in the traditional way, in this article I propose a method that works around the limitations while gaining most of its advantages.
-description: In this article I present some of the tools I recommend for developing products and embedded systems.
+imgalt: Icon for the Version Control for KiCAD PCB Projects article
+excerpt: Version control is a common tool used in the software development world that tracks file revisions and enables developer collaboration. Although the visual nature of PCB and schematic designs presents a barrier to using it in the traditional way, in this article I propose an effective method for bringing the advantages of version control to electronics developers.
+description: Learn how to bring the advantages of version control to your KiCAD PCB designs.
 ---
 
 # Version Control for KiCAD PCB Projects
@@ -21,11 +21,11 @@ Version control is like a file time machine. As you edit files, you can create c
 
 Why should you use a version control system for your PCB designs? Isn't it enough to archive old PCB revisions in a folder or create new files for each revision?
 
-* A version control system provides **structure and organization** to manage perhaps hundreds of revisions. Without the need to create multiple files and manually maintain backups, your project folder remains clean and organized. Production files are conveniently available but are unambiguously separated from development files.
+A version control system provides **structure and organization** to manage perhaps hundreds of revisions. Without the need to create multiple files and manually maintain backups, your project folder remains clean and organized. Production files are conveniently available but are unambiguously separated from development files.
 
-* A version control system allows **effective collaboration** by providing mechanisms to prevent data loss when multiple people try editing the same files. Further, any team member can check-out, review and edit the project if they have shared access to a repository.
+A version control system allows **effective collaboration** by providing mechanisms to prevent data loss when multiple people try editing the same files. Further, any team member can check-out, review and edit the project if they have shared access to a repository.
 
-* Using a version control system is **safer** because you only modify your own local copy of the project. The entire history of the project is safely stored elsewhere. If you make a big mistake or corrupt a file, you can easily restore to the last commit. With this safety net, you can afford to take risks to solve circuit or routing problems without worrying that your previous work will be lost.
+Using a version control system is **safer** because you only modify your own local copy of the project. The entire history of the project is safely stored elsewhere. If you make a big mistake or corrupt a file, you can easily restore to the last commit. With this safety net, you can afford to take risks to solve circuit or routing problems without worrying that your previous work will be lost.
 
 There are a few different options for version control systems, but I've found Subversion (SVN) to be useful and practical in a production environment, particularly because of its ability to enforce locks on files - we'll learn more about these shortly.
  
@@ -37,19 +37,17 @@ We'll take a look at an example design process for a simple circuit and PCB usin
 * Download TortoiseSVN for Windows: [https://tortoisesvn.net/downloads.html](https://tortoisesvn.net/downloads.html){:target="_blank"}
 
 ### Create and Setup A Subversion Repository
-We'll begin by creating a new SVN Repository. A repository is the database that stores information about file data, revision history, and various "rules" for the project. Make a new empty folder and name it `BlinkyProject`, then right click the folder and click TortoiseSVN > Create Repository Here. When prompted, click the "Create Folder Structure" button, then click OK to close all windows.
+We'll begin by creating a new SVN Repository. A repository is the database that stores information about file data, revision history, and various "rules" for the project. Make a new empty folder and name it `BlinkyProject`, then right-click the folder and click TortoiseSVN > Create Repository Here. When prompted, click the "Create Folder Structure" button, then click OK to close all windows.
 
 This repository folder only contains the raw database and not the actual files of your project, so don't try and modify the files. Using the repository database, TortoiseSVN can create a local "working copy" folder. The working copy folder contains the actual project files. When project files are changed and committed, the working copy folder syncs information about the changes to the repository database.
 
 Creating the working copy is known as "Checking Out" the repository. Right click on the repository folder, then click SVN Checkout. Change the working copy path to somewhere on your Desktop or Documents folder, if you wish. You can leave all the other settings the same and then click OK.
 
-If you navigate into the working copy folder, you'll see three folders - trunk, tags, and branches. Here's briefly what we will use each folder for (don't worry, each will be explained further below).
+If you navigate into the working copy folder, you'll see three folders - trunk, tags, and branches. Here's briefly what we will use each folder for (don't worry, each will be explained in the sections below).
 
-* trunk: this contains all the living, in-development project files. Whenever you make fixes or edits to a schematic or board file, you'll change the files in this directory.
-
-* tags: this folder will contain "snapshots" of your project taken when you generate gerber files for production.
-
-* branches: miscellaneous boards based on tagged snapshots that may be customized, e.g for panelling.
+* **trunk:** this contains all the living, in-development project files. Whenever you make fixes or edits to a schematic or board file, you'll change the files in this directory.
+* **tags:** this folder will contain "snapshots" of your project taken when you generate gerber files for production.
+* **branches:** miscellaneous boards based on tagged snapshots that may be customized, e.g for panelling.
 
 There's nothing special about these folders or their names, they are just SVN convention. You could rename them to something like "development", "production", and "variants" if you wanted.
 
@@ -62,7 +60,7 @@ imgurl="/single_led.jpg"
 caption="Our humble LED circuit" 
 alttext="A screenshot of KiCAD showing a circuit with a battery, resistor and an LED."%}
 
-Our masterpiece is complete! Let's commit our changes, lest this beast of a circuit be disturbed. Save and close the schematic, then right click into the trunk folder, then click SVN Commit. The Commit Description section is where you would normally enter a brief description of your changes, but for now we'll just write "Initial Commit". Check the boxes next to the .kicad_pro, .kicad_pcb, and the .kicad_sch files in the area below to ensure they are included. Click OK, and the data will be sent to the repository database.
+Our masterpiece is complete! Let's commit our changes, lest this beast of a circuit be disturbed. Save and close the schematic, then right-click into the trunk folder, then click SVN Commit. The Commit Description section is where you would normally enter a brief description of your changes, but for now we'll just write "Initial Commit". Check the boxes next to the .kicad_pro, .kicad_pcb, and the .kicad_sch files in the area below to ensure they are included. Click OK, and the data will be sent to the repository database.
 
 {% include imgwcaption.html 
 imgroot=page.imgroot
@@ -70,7 +68,7 @@ imgurl="/initial_commit.jpg"
 caption="Making our first commit to the SVN Repository" 
 alttext="A screenshot of the SVN commit window."%}
 
-We didn't check off the backup folder or the .kicad_prl file. This means that any changes to the files in the backup folder or the .kicad_prl file will not be captured during commits, nor will they appear when anyone else checks out the SVN repository. This is okay - we don't need to store their changes in the repo because the .kicad_prl will regenerate, and the backups are only for short term use if KiCAD crashes and we forgot to save. For long term use, our commits will take care of backing up major changes.
+We didn't check off the backup folder or the .kicad_prl file. This means that any changes to the files in the backup folder or the .kicad_prl file will not be captured during commits, nor will they appear when anyone else checks out the SVN repository. This is okay - we don't need to store their changes in the repository because the .kicad_prl will regenerate, and the backups are only for short term use if KiCAD crashes and we forgot to save. For long term use, our commits will take care of backing up major changes.
 
 Lets say our requirements changed and we actually need two LEDs. Let's update the circuit now to add a second resistor and LED. When finished, save and close the file. Commit again, as described above.
 
@@ -80,7 +78,7 @@ imgurl="/two_leds.jpg"
 caption="Gasp, a second LED?!" 
 alttext="A screenshot of KiCAD showing a circuit with a battery, two resistors and LEDs."%}
 
-At any time, we can review the entire history of our project by right-clicking the folder of interest, then click TortoiseSVN -> Show Log. This gives a nice window showing all the changes made in this folder. By right-clicking a revision entry and clicking Browse Repository, you can open the files as they appeared at that point in history. Try opening the repository of revision 2 and viewing the .kicad_sch file. You should only see one LED present. If you would like to revert a file to how it appeared in a previous revision (for example if you made a mistake) you can click the file, then right click the revision and click Update Item to Revision. If you open the schematic file from the file explorer, you'll see the file is back to one LED.
+At any time, we can review the entire history of our project by right-clicking the folder of interest, then click TortoiseSVN -> Show Log. This gives a nice window showing all the changes made in this folder. By right-clicking a revision entry and clicking Browse Repository, you can open the files as they appeared at that point in history. Try opening the repository of revision 2 and viewing the .kicad_sch file. You should only see one LED present. If you would like to revert a file to how it appeared in a previous revision (for example if you made a mistake) you can click the file, then right-click the revision and click Update Item to Revision. If you open the schematic file from the file explorer, you'll see the file is back to one LED.
 
 {% include imgwcaption.html 
 imgroot=page.imgroot
@@ -113,7 +111,7 @@ imgurl="/add_needs_lock.jpg"
 caption="Enforcing locks on the .kicad_pcb and .kicad_sch files will prevent other collaborators from opening the file at the same time, reducing the number of arguments about who has to do all their work over again." 
 alttext="A screenshot of TortoiseSVN's properties screen with the Needs Lock option highlighted."%}
 
-Notice now that if you open the .kicad_sch file, KiCAD now informs you that it is read-only. Close the file, then right click it and select the new option SVN Get Lock. Enter a message - this will appear to anyone else that tries to take a lock on the same file - then click OK.
+Notice now that if you open the .kicad_sch file, KiCAD now informs you that it is read-only. Close the file, then right-click it and select the new option SVN Get Lock. Enter a message - this will appear to anyone else that tries to take a lock on the same file - then click OK.
 
 {% include imgwcaption.html 
 imgroot=page.imgroot
@@ -138,7 +136,7 @@ imgurl="/blinky_circuit.jpg"
 caption="One of my best :')" 
 alttext="A screenshot of the completed PCB design in KiCAD"%}
 
-Let's say now these files are ready to be sent for fabrication. Right click on the trunk folder and click TortoiseSVN -> Branch/Tag. Change the 'To path' option to "/tags/V1", and enter a message such as "snapshot production revision V1". The tag has now been created, but you have to right click the tags folder and click SVN Update for the new files to appear.
+Let's say now these files are ready to be sent for fabrication. Right click on the trunk folder and click TortoiseSVN -> Branch/Tag. Change the 'To path' option to "/tags/V1", and enter a message such as "snapshot production revision V1". The tag has now been created, but you have to right-click the tags folder and click SVN Update for the new files to appear.
 
 We will now generate Gerber files directly from the tag instead of the trunk. Having a Gerber folder alongside the development files in the trunk is dangerous - they don't automatically update with the design and you can easily forget to regenerate them, leaving them out-of-date when you go to production. Open the .kicad_pcb file and click File -> Plot. Enter a path for the Gerbers, then click Plot. Click Generate Drill Files, then click Generate Drill File in the new window. Once you've reviewed the gerber files with GerbView, run SVN Commit once more, making sure to check the new Gerber folder and the new Gerber files to include them. Write a commit message, such as 'Create production files for revision V1', then click Commit. 
 
