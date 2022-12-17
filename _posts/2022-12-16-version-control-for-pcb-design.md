@@ -157,3 +157,21 @@ What if you need to panelize your boards before sending them for production? Pan
 In this article we've explored how to use the Subversion version control software with a KiCAD PCB project. After setting up the repository, we made some changes to the PCB and commit and saw how SVN tracks file history, and how you could review files as they appeared in the past. We also saw how SVN's enforced file locks can help prevent conflicts or data loss if two people try to work on the same file at once. Finally, we took a snapshot our project and created a tag to represent a production-ready revision, from which we derived the Gerber files. 
 
 Thanks for reading, and I hope you found this tutorial useful! Please feel free to reach out to me on the social links below if you have any comments or questions.
+
+## Appendix: SVN CLI Commands
+* **Create a Repository:** `svnadmin create BlinkyProject`
+* **Checkout Repository:** `svn checkout file:///path/to/BlinkyProject ./path/to/BlinkyProjectWorkingCopy`
+* **Manually Create Folder Structure:** `cd BlinkyProjectWorkingCopy`; `mkdir tags branches trunk`
+* **Stage Folders For Commit:** `svn add . --force`
+* **Commit Folder Structure:** `svn commit -m "Add folder structure"`
+* **Add KiCAD Project Files:** `cd trunk`; `svn add *.kicad_pro *.kicad_sch *.kicad_pcb`
+* **Commit Single LED Circuit:** `svn commit -m "initial commit"`
+* **Commit Two LED Circuit:** `svn commit -m "add second LED"`
+* **Review SVN History:** `svn update`; `svn log`
+* **Return File to Earlier Revision:** `svn merge -r (current rev):(rev to return to)BlinkyCLI.kicad_sch`; then either commit with `svn commit -m "reverted to older revision`, or instead `svn revert BlinkyCLI.kicad_sch` to return to latest revision
+* **Add Needs-Lock Property:** ```svn propset svn:needs-lock '*' BlinkyCLI.kicad_pcb BlinkyCLI.kicad_sch```
+* **Commit Properties:** `svn commit -m "Add needs lock property"`
+* **Take Lock:** `svn lock BlinkyCLI.kicad_sch` 
+* **Commit third LED:** `svn commit -m "Add another LED"`
+* **Create V1 Tag**: `svn copy . ../tags/V1`; `svn commit -m "Create V1 tag"`
+* **Add Gerbers and Commit:** `svn add Gerbers`; `svn commit -m "Create production files for V1"` (No Tag Warning)
