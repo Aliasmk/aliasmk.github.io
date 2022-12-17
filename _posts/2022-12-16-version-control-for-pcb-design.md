@@ -78,7 +78,7 @@ imgurl="/two_leds.jpg"
 caption="Gasp, a second LED?!" 
 alttext="A screenshot of KiCAD showing a circuit with a battery, two resistors and LEDs."%}
 
-At any time, we can review the entire history of our project by right-clicking the folder of interest, then click TortoiseSVN -> Show Log. This gives a nice window showing all the changes made in this folder. By right-clicking a revision entry and clicking Browse Repository, you can open the files as they appeared at that point in history. Try opening the repository of revision 2 and viewing the .kicad_sch file. You should only see one LED present. If you would like to revert a file to how it appeared in a previous revision (for example if you made a mistake) you can click the file, then right-click the revision and click Update Item to Revision. If you open the schematic file from the file explorer, you'll see the file is back to one LED.
+At any time, we can review the entire history of our project by right-clicking the folder of interest, then click TortoiseSVN -> Show Log. This gives a nice window showing all the changes made in this folder. By right-clicking a revision entry and clicking Browse Repository, you can open the files as they appeared at that point in history. Try opening the repository of revision 2 and viewing the .kicad_sch file. You should only see one LED present. If you would like to revert a file to how it appeared in a previous revision (for example if you made a mistake) you can click the file, then right-click the revision and click Revert to Revision. If you open the schematic file from the file explorer, you'll see the file is back to one LED.
 
 {% include imgwcaption.html 
 imgroot=page.imgroot
