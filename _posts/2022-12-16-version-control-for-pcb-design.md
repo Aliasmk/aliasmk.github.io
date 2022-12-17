@@ -32,12 +32,16 @@ There are a few different options for version control systems, but I've found Su
 ## Guide to Setting Up Version Control for your PCB Designs
 
 ### Get Subversion
-We'll take a look at an example design process for a simple circuit and PCB using KiCAD, a powerful suite for schematic and PCB design. I'm assuming you have some background in KiCAD and have it already installed. To create and manage our SVN repositories we'll use TortoiseSVN, a common GUI-based client for Windows that integrates nicely with the Explorer right-click menu. Mac and Linux users - CLI equivalents coming soon!
+We'll take a look at an example design process for a simple circuit and PCB using KiCAD, a powerful suite for schematic and PCB design. I'm assuming you have some background in KiCAD and have it already installed. To create and manage our SVN repositories we'll use TortoiseSVN, a common GUI-based client for Windows that integrates nicely with the Explorer right-click menu. If you are using Mac or Linux, I've listed some SVN clients that appear similar (but I haven't tested). 
 
 * Download TortoiseSVN for Windows: [https://tortoisesvn.net/downloads.html](https://tortoisesvn.net/downloads.html){:target="_blank"}
+* Download SmartSVN for Mac: [https://www.smartsvn.com/](https://www.smartsvn.com/){:target="_blank"}
+* Download RabbitVCS for Linux: [http://wiki.rabbitvcs.org/wiki/download](http://wiki.rabbitvcs.org/wiki/download){:target="_blank"}
+
+You can follow along with the command line - see the [Appendix](#appendix-svn-cli-commands) at the end of this article. You'll need to first install SVN from Homebrew (Mac), your package manager (Linux), or by enabling the command line tools during TortoiseSVN installation (Windows).  
 
 ### Create and Setup A Subversion Repository
-We'll begin by creating a new SVN Repository. A repository is the database that stores information about file data, revision history, and various "rules" for the project. Make a new empty folder and name it `BlinkyProject`, then right-click the folder and click TortoiseSVN > Create Repository Here. When prompted, click the "Create Folder Structure" button, then click OK to close all windows.
+We'll begin by creating a new SVN Repository. A repository is the database that stores information about file data, revision history, and various "rules" for the project. Make a new empty folder and name it `BlinkyProject`, then right-click the folder and click TortoiseSVN -> Create Repository Here. When prompted, click the "Create Folder Structure" button, then click OK to close all windows.
 
 This repository folder only contains the raw database and not the actual files of your project, so don't try and modify the files. Using the repository database, TortoiseSVN can create a local "working copy" folder. The working copy folder contains the actual project files. When project files are changed and committed, the working copy folder syncs information about the changes to the repository database.
 
@@ -157,3 +161,37 @@ What if you need to panelize your boards before sending them for production? Pan
 In this article we've explored how to use the Subversion version control software with a KiCAD PCB project. After setting up the repository, we made some changes to the PCB and commit and saw how SVN tracks file history, and how you could review files as they appeared in the past. We also saw how SVN's enforced file locks can help prevent conflicts or data loss if two people try to work on the same file at once. Finally, we took a snapshot our project and created a tag to represent a production-ready revision, from which we derived the Gerber files. 
 
 Thanks for reading, and I hope you found this tutorial useful! Please feel free to reach out to me on the social links below if you have any comments or questions.
+
+## Appendix: SVN CLI Commands
+
+**Create a Repository:** `svnadmin create BlinkyProject`
+
+**Checkout Repository:** `svn checkout file:///path/to/Project ./path/to/WorkingCopy`
+
+**Manually Create Folder Structure:** `cd BlinkyProjectWorkingCopy`; `mkdir tags branches trunk`
+
+**Stage Folders For Commit:** `svn add . --force`
+
+**Commit Folder Structure:** `svn commit -m "Add folder structure"`
+
+**Add KiCAD Project Files:** `cd trunk`; `svn add *.kicad_pro *.kicad_sch *.kicad_pcb`
+
+**Commit Single LED Circuit:** `svn commit -m "initial commit"`
+
+**Commit Two LED Circuit:** `svn commit -m "add second LED"`
+
+**Review SVN History:** `svn update`; `svn log`
+
+**Return File to Earlier Revision:** `svn merge -r (current rev):(past rev) Blinky.kicad_sch`; then either commit with `svn commit -m "reverted to older revision`, or instead `svn revert Blinky.kicad_sch` to return to latest revision
+
+**Add Needs-Lock Property:** `svn propset svn:needs-lock '*' Blinky.kicad_pcb`; `svn propset svn:needs-lock '*' Blinky.kicad_sch`
+
+**Commit Properties:** `svn commit -m "Add needs lock property"`
+
+**Take Lock:** `svn lock Blinky.kicad_sch` 
+
+**Commit third LED:** `svn commit -m "Add another LED"`
+
+**Create V1 Tag**: `svn copy . ../tags/V1`; `svn commit -m "Create V1 tag"`
+
+**Add Gerbers and Commit:** `svn add Gerbers`; `svn commit -m "Create production files for V1"`
