@@ -12,3 +12,6 @@ permalink: /blog/:year/:month/:day/:title/
 collections:
   projects:
     output: true
+
+kramdown:
+  toc_levels: 2..6
