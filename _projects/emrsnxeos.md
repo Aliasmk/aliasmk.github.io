@@ -10,7 +10,6 @@ btns:
 - {text: Learn More..., link: "/projects/emrsnxeos/", active: true}
 - {text: Project Github, link: "https://github.com/Aliasmk/EMRSNxEOS", active: true}
 
-sitemap: false
 ---
 # EMRSNxEOS Portable Stage Lighting Control System
 As theatrical lighting technology has evolved, the freedom and complexity of lighting designs achievable has become nearly limitless. Articulated mirrors steer light around a stage. Electromechanical filters change a beam's characteristics. High power RGB LED fixtures can create millions of colors. The number of unique controls for each show setup can reach into the thousands.

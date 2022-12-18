@@ -1,6 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.sitemap == false %}
+<meta name="robots" content="none" />
+{% else %}
 <meta name="robots" content="index, follow" />
+{% endif %}
 
 <!-- Page Details -->
 <title>{{ page.title }} | {{ site.title }}</title>
