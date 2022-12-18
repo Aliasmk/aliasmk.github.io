@@ -32,7 +32,7 @@ Optionally, if you want to build with hardware, you also need:
 
 ## Installation
 
-Unzip the X-Cube-TouchGFX file and run \Utilities\PC_Software\TouchGFXDesigner\TouchGFX-x.xx.msi to install the designer.
+Unzip the X-Cube-TouchGFX file and run the TouchGFX-x.xx.msi file in Utilities/PC_Software/TouchGFXDesigner to install the designer.
 
 If you have a discovery board, STM32CubeProgrammer allows you to flash the application to the hardware. Install it with the default install settings. Of note, it must be installed with the default installation path for the TouchGFX Designer to be able to use it. It may request a driver install - this is normal.
 
