@@ -25,27 +25,27 @@ body {
   overflow:auto;
 }
 
-td {
+#table-container td {
   padding: 0.5em 1em;
 }
 
-th {
+#table-container th {
   padding: 0.5em 1em;
 }
 
-thead tr{
+#table-container thead tr{
   background-color: #dddddd;
 }
 
-tbody tr:nth-child(odd) {
+#table-container tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
 
-tbody tr:nth-child(even) {
+#table-container tbody tr:nth-child(even) {
   background-color: #f6f6f6;
 }
 
-table {
+#table-container table {
   background-color: #ffffff;
   width:100%;
   border-collapse:collapse;

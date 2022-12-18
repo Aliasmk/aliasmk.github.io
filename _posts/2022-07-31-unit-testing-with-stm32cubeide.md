@@ -43,7 +43,13 @@ The easiest way to add a local unit testing configuration to an STM32 project is
 
 Download and install MSYS2 from [https://www.msys2.org/](https://www.msys2.org/). When installed run the MSYS2 shell (if it doesn't open after installation, you can find it by searching "MSYS2 MSYS" in the Start Menu). Run the command `pacman -Syu` , which will start the first of two stages required to bring the package manager up to date. Allow the package manager to install the packages. Between stages, the terminal window will prompt you to close and manually reopen the terminal by clicking on the MSYS2 MSYS start menu or desktop icon. Complete the setup by running `pacman -Syu` a second time and accepting the package download when prompted.
 
-Once MSYS2 is fully updated, you can begin installing the required development packages. Run `pacman -S base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-gtest` to install basic unix-like commands, the MinGW compiler and the GoogleTest libraries. Other packages and libraries you want can be installed later and will be made automatically available to the compiler.
+Once MSYS2 is fully updated, you can begin installing the required development packages. Run the following command to install basic unix-like commands, the MinGW compiler and the GoogleTest libraries.
+{% highlight plaintext %}
+{% raw %}
+pacman -S base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-gtest
+{% endraw %}
+{% endhighlight %}
+Other packages and libraries you want can be installed later and will be made automatically available to the compiler.
 
 ### Creating the Donor Project
 
