@@ -1,14 +1,31 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow" />
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">     
-<!-- <script defer data-domain="michael.kafarowski.com" data-api="https://perception.mkafarowski.workers.dev/connection/event" src="https://perception.mkafarowski.workers.dev/perception/script.js"></script>-->
-<script defer data-domain="michael.kafarowski.com" src="https://plausible.io/js/script.js"></script>
-
-
+<!-- Page Details -->
 <title>{{ page.title }} | {{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+{% if page.title == 'Homepage' %}
+<!--  WebSite Structured Data -->
+<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Michael Kafarowski",
+      "url" : "https://michael.kafarowski.com/"
+      }
+    }
+</script>
+{% endif %}
+
+<!-- Stylesheets -->
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">   
+
+<!-- Scripts -->
+<script defer data-domain="michael.kafarowski.com" data-api="https://perception.mkafarowski.workers.dev/connection/event" src="https://perception.mkafarowski.workers.dev/perception/script.js"></script>
+<!-- <script defer data-domain="michael.kafarowski.com" src="https://plausible.io/js/script.js"></script> -->
+
