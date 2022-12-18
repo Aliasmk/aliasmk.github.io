@@ -18,6 +18,39 @@ body {
   color: rgb(18, 20, 26);
 }
 
+
+
+#table-container {
+  padding: 0.1em 3em;
+  overflow:auto;
+}
+
+td {
+  padding: 0.5em 1em;
+}
+
+th {
+  padding: 0.5em 1em;
+}
+
+thead tr{
+  background-color: #dddddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+table {
+  background-color: #ffffff;
+  width:100%;
+  border-collapse:collapse;
+}
+
 #notice {
   grid-row: notice;
   background-color: #563ACC;
