@@ -180,7 +180,7 @@ Thanks for reading, and I hope you found this tutorial useful! Please feel free 
 | Commit Single LED Circuit | `svn commit -m "initial commit"` |
 | Commit Two LED Circuit | `svn commit -m "add second LED"` |
 | Review SVN History | `svn update`<br>`svn log` |
-| Return File to Earlier Revision | `svn merge -r (current rev):(past rev) Blinky.kicad_sch`<br>Commit: `svn commit -m "reverted to older revision`<br>OR Return to latest: `svn revert Blinky.kicad_sch`  |
+| Return File to Earlier Revision | `svn merge -r (current rev):(past rev) Blinky.kicad_sch`<br>Commit: `svn commit -m "reverted to older revision"`<br>OR Return to latest: `svn revert Blinky.kicad_sch`  |
 | Add Needs-Lock Property | `svn propset svn:needs-lock '*' Blinky.kicad_pcb Blinky.kicad_sch` |
 | Commit Properties | `svn commit -m "Add needs lock property"` |
 | Take Lock | `svn lock Blinky.kicad_sch` |
