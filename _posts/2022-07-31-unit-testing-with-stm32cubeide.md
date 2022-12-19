@@ -6,6 +6,8 @@ imgurl: /assets/img/posts/2022-07-31-unit-testing-with-stm32cubeide/title.png
 imgalt: Icon for Unit Testing With STM32CubeIDE Article
 excerpt: Unit testing is a powerful tool for improving the speed and quality of your embedded system development process, but it can be tricky to integrate into your workflow. By the end of this tutorial, you will be able to start writing unit tests directly in STM32CubeIDE that will compile and execute against your embedded code natively on your development machine.
 description: In this tutorial we'll learn about how to make native unit testing easy for your embedded STM32 projects.
+
+redirect_from: /blog/2022/07/31/unit-testing-with-stm32cubeide/
 ---
 
 # Unit Testing Your Embedded Code Directly In STM32CubeIDE

@@ -8,7 +8,7 @@ highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
 collections:
   projects:
     output: true

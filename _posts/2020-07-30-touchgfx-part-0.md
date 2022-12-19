@@ -6,6 +6,8 @@ imgurl: /assets/img/posts/2020-07-30-touchgfx-part-0/icon.jpg
 imgalt: Screenshot of TouchGFX interface on a STM32F469i dev board
 excerpt: Does your user interface really live up to the expectations of your customer? In today's era of HD-capable smartphones, consumers expect high quality, snappy, visually appealing graphical user interfaces. In this tutorial we'll set up and build a demo application using TouchGFX, a powerful and easy-to-use GUI framework for STM32 microcontrollers.
 description: In this tutorial we'll set up and build a demo application using TouchGFX, a graphics framework for STM32.
+
+redirect_from: /blog/2020/07/30/touchgfx-part-0/
 ---
 # Building an Embedded System with a Rich GUI - Introduction to TouchGFX
 

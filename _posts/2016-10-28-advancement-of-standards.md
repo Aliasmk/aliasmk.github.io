@@ -6,6 +6,8 @@ imgurl: /assets/img/posts/2016-10-28-advancement-of-standards/thumbnail.png
 imgalt: Apple levelling-up with a green Mario mushroom
 excerpt: Apple unveiled the new MacBook Pro yesterday, and there are some really interesting changes to it aside from the usual changes in form factor and display. Here is why the Touch Bar and the emphasis on USB-C ports make this year’s MacBook Pro really stand out.
 description: Here is why the Touch Bar and the emphasis on USB-C ports make this year’s MacBook Pro really stand out.
+
+redirect_from: /blog/2016/10/28/advancement-of-standards/
 ---
 # Advancement of Standards
 
