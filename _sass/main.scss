@@ -122,6 +122,11 @@ body {
   width: 100%;
 }
 
+#nav a {
+  color: white;
+}
+
+
 .activetab {
   background-color: rgba(255,255,255,0.2);
 }
@@ -167,6 +172,15 @@ p {
 
 a {
   word-wrap: break-word;
+  color: #35523c;
+}
+
+a:visited {
+  color: #35523c;
+}
+
+a:hover {
+  color: #578562;
 }
 
 li {
@@ -316,6 +330,11 @@ figcaption {
 
 .button:hover{
   background-color: rgb(87, 133, 98);
+  color: white;
+}
+
+.button:visited{
+  color: white;
 }
 
 .button:active{
