@@ -1,7 +1,7 @@
 ---
 layout: default
 title: EMRSNxEOS Theater Lighting Control System
-year: 2020 - In Progress
+year: 2020 - 2022
 imgurl: /assets/img/projects/eosoverview.jpg
 imgalt: EMRSNxEOS on a breadboard
 active: true
