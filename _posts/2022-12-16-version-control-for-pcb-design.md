@@ -3,7 +3,7 @@ layout: default
 author: michael
 title: Version Control for KiCAD PCB Projects
 imgroot: /assets/img/posts/2022-12-16-version-control-for-pcb-design/
-imgurl: /assets/img/posts/2022-12-16-version-control-for-pcb-design/icon.jpg
+imgurl: /assets/img/posts/2022-12-16-version-control-for-pcb-design/icon.png
 imgalt: Icon for the Version Control for KiCAD PCB Projects article
 excerpt: Version control is a common tool used in the software development world that tracks file revisions and enables developer collaboration. Although the visual nature of PCB and schematic designs presents a barrier to using it in the traditional way, in this article I propose an effective method for bringing the advantages of version control to electronics developers.
 description: Learn how to bring the advantages of version control to your KiCAD PCB designs.
