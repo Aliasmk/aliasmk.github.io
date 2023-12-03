@@ -4,7 +4,7 @@ title: Chat o' Lantern
 year: 2023
 imgurl: /assets/img/projects/chatolantern/chatolantern.gif
 imgalt: Animation showing multiple lighting emotes of Chat o' Lantern
-desc: Chat o'Lantern is a friendly AI trapped in a Jack o' Lantern... with a dark and sinister alter-ego. It listens to you and responds in unique ways. No audio or responses are hardcoded - everything you hear is created on-the-fly using AI API's for transcription, response, and voice generation. <br><br>Read on to learn more... <i>if you dare</i>.
+desc: Chat o'Lantern is a friendly AI trapped in a Jack o' Lantern... with a dark and sinister alter-ego. It listens to you and responds in unique ways. No audio or responses are hardcoded - everything you hear is created on-the-fly using AI APIs for transcription, response, and voice generation. <br><br>Read on to learn more... <i>if you dare</i>.
 description: Chat o'Lantern is a friendly AI trapped in a Jack o' Lantern with a dark and sinister alter-ego. Find out more... if you dare.
 btns: 
 - {text: Learn More, link: "/projects/chatolantern/", active: true}
