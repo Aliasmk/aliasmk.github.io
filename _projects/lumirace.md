@@ -26,7 +26,7 @@ Slot cars bodies have become highly detailed and realistic, but most drivers mis
 
 An on-board rechargeable battery powers the system both on and off the track. The lights illuminate when power is applied for the first time, and once removed from the track the lights will remain on for a configurable period of time.
 
-LumiRace doesn't need to be soldered, making it incredibly easy to install. Simply wire it to the braid in parallel with the motor. With the easy-to-use PC software you can easily customize the brightness and behavior of all the lights. Use it choose between different modes such as Daylight Running, where the tail lights glow faintly while the car isn't braking.
+LumiRace doesn't need to be soldered, making it incredibly easy to install. Simply wire it to the braid in parallel with the motor. With the easy-to-use PC software you can easily customize the brightness and behavior of all the lights.
 
 **LumiRace: Founders Edition** will be available for sale in early 2024! Don't miss out on this limited-run, exclusive first batch - [Register as an Early-Access Member](https://alias.mk/lumirace-preorder) for a special discount code, and be among the first to get your hands on it.
 
