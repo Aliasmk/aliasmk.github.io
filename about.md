@@ -15,6 +15,8 @@ Between 2019 and 2023 I worked as an embedded electronics and software designer 
 
 In 2019, I graduated from the Mechatronics Engineering program at the University of Waterloo. While at Waterloo I worked on projects such as an underwater ROV with a telemetry-link controller, a precision LVDT instrument, and a modular smart granola snack making machine. I also had the pleasure of interning at Metrolinx in Signals, Toronto Transit Commission in Automatic Train Control, Agfa-Gevaert in Hardware Design, and as a new product designer at Metalumen Manufacturing.
 
+Since June 2025 I have been a licensed Professional Engineer (P.Eng) in Ontario (#100577223).
+
 I am a licensed radio amateur, callsign ***VA3FMK***. You can sometimes find me on 70cm and 2m repeaters in the GTA. I also regularly monitor 446.000 MHz or 146.520 MHz FM simplex calling frequencies. I use a Yaesu VX-6R 5W handheld with either a dual-band Signal Stick antenna or a "slim jim" roll-up antenna made from balanced ladder line.
 
 Recently I've reignited my old hobby of racing slot cars! I'm developing an intelligent lighting control circuit for slot cars called LumiRace - [read more about it here](/projects/lumirace/). I also recently painted my first car model, which was a great experience that will soon be captured in article form here.
